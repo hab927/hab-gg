@@ -1,0 +1,81 @@
+body {
+    background-color: thistle;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, tr {
+    font-weight: lighter;
+    border: 5px groove #51414F;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, tr {
+    padding: 4px;
+}
+
+/*
+Source - https://stackoverflow.com/a/67968068
+Posted by brc-dd, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-19, License - CC BY-SA 4.0
+*/
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* end citation */
+
+.center-image {
+    padding: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flanking-image {
+    vertical-align: bottom;
+}
+
+.warning {
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#grad {
+  background-image: linear-gradient(to bottom, powderblue, thistle);
+  background-attachment: fixed;
+}

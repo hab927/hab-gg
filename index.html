@@ -10,9 +10,9 @@
 <div class="wrapper">
   <div class="marquee">
     <p>
-      Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;
+      Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;
     <p>
-      Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;
+      Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;Hello all. I am hab. I own this (very cool) website. Read below for more about me!&nbsp;
     </p>
   </div>
 </div>
@@ -20,12 +20,52 @@
         <img class="flanking-image" src="./assets/star6.gif">
         Hello! welcome to my web page.
         <img class="flanking-image" src="./assets/star6.gif">
+        <div>
+            <button id="defaultFontButton">Default Font</button>
+            <button id="dyslexicFontButton" style="font-family: 'Comic Sans MS'">Dyslexia-Friendly Font</button>
+        </div>
     </h1>
+    <h2>Tell me about yourself!!!</h2>
+    <p>By the time you're reading this, I've probably already graduated from university with a computer science degree. I'm gonna be one of the many people looking for jobs in this extremely volatile job market (certainly NOT looking forward to this), but I'm doing what I can to improve the mood around here!<br><br>
+    Suffice to say, without getting into much detail, I'm disillusioned with the current tech industry. I'm not a fan of the direction it's headed where it seems to favor the pursuit of advancing technology for convenience for the rich. 
+    I'm seeking to make meaningful changes in the smaller communities I am involved in rather than trying to make a big difference in the world. I figure it pays off more to see the changes I make in people's lives, and supporting smaller communities is a good way to see that firsthand.</p>
+
     <h2>What do I even do?</h2>
-    <p> I play games, and on occasion make games. My most fruitful venture right now is a custom level I'm creating using an ULTRAKILL custom editor called Rude Level Editor, a proprietary offshoot of the official <a href="https://docs.tundra.pitr.dev/">Tundra Level Editor</a>.
+
+    <p> I play games, and on occasion make games. My most fruitful venture right now is a custom level I'm creating using an ULTRAKILL custom editor called Rude Level Editor, a proprietary offshoot of the official <a href="https://docs.tundra.pitr.dev/">Tundra Level Editor</a>. Here are some pictures if you're curious (taken from the Unity Editor):
         <br><br>
         I'm theming it around an airport design. I'm taking inspiration from the new Fraud layer, which uses non-Euclidean geometry, camera and gravity trickery to make you think you're working with an impossible space. It's really cool! I implore you to check out the base game if you can.
     </p>        
+
+    <h2>HELLO! If you are a recruiter, and you're seeing this, click the dropdown.</h2>
+    <h3>(Or if for some reason you want to see what I'm good at and like showing off!)</h3>
+
+    <details open>
+        <summary><b style="color: blue">Yes. Open sesame. I am a recruiter.</b> (you dont have to be a recruiter to click this its just for convenience sake)</summary>
+        <p>Hi. I made this because it would probably be more convenient to include a section showing off what I'm good at for jobs. If you are seeing this, you probably saw my resume (and CV if you requested it) already. So I won't be rehashing it here.</p>
+
+        <h3>What skills??</h3>
+        <ul>
+            <li>Blender! I've been into modeling and texturing lately, largely spurred on by my involvement in the <i>ULTRAKILL</i> modding community.</li> Here are some of my most recent creations:<br><br>
+            <figure>
+                <img src="./assets/metaldetector.png" width="400px">
+                <figcaption>Metal detector! Textured and modeled by me.</figcaption>
+            </figure>
+            <br><br>
+            <figure>
+                <img src="./assets/baggageclaim.png" width="400px">
+                <figcaption>Baggage claim conveyor! Textured and modeled by me.</figcaption>
+            </figure>
+            <br><br>
+            <figure>
+                <img src="./assets/twistingroom.png" width="600px">
+                <figcaption>One of my twisting rooms for the aforementioned custom level. Textures from ULTRAKILL's base game and modeling by me.</figcaption>
+            </figure>
+        </ul>
+        <p></p>
+
+    </details>
+
     <h2>Why does this website look like this?</h2>
     <p>
         I always preferred the look of old early 2000s websites. It's what I grew up with, and I feel like it's a lost art that's going away the further we get. It's probably idiotic to stick to something traditional like this when there's so much more to be learned with new technological advancements in rendering, website design, UI design, and whatnot. But I feel like there's something good about a website where you just have to scroll and read to find out all the information I have to present.
@@ -44,7 +84,7 @@
     <table>
         <tr>
             <th>E-mail</th>
-            <th>warmairballoon@gmail.com</th>
+            <th><button id="emailButton">---==<  Click to copy!  >==---</button></th>
         </tr>
         <tr>
             <th>GitHub</th>
@@ -64,4 +104,6 @@
         </tr>
     </table>
 </body>
+<script src="./scripts/buttons.js"></script>
+<script src="./scripts/tooltip.js"></script>
 </html>

@@ -46,13 +46,32 @@ details.dark-blue {
   color:black;
   background-image: url("../assets/windows_vista_beta_75.jpg");
 }
+details.dark-blue a {
+  color:blue;
+}
+details.dark-green a:visited {
+  color:darkmagenta;
+}
 
 details.dark-purple {
   background-image: url("../assets/windows_vista_beta_107.jpg");
 }
+details.dark-purple a {
+  color:greenyellow;
+}
+details.dark-purple a:visited {
+  color:orange;
+}
 
 h1, h2, h3 {
     text-align: center;
+}
+
+img {
+  margin: 5px;
+}
+img.fancy {
+  border: 1px solid white;
 }
 
 table {
@@ -115,8 +134,17 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
     margin-right: auto;
 }
 
+.center-container {
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flanking-image {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .tooltip {
@@ -133,7 +161,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
     font-weight: bold;
 }
 
-#grad {
+.bg-image {
   /* background-image: linear-gradient(to bottom, powderblue, thistle); */
   background-image: url("../assets/windows_vista_beta_76.jpg");
   background-size: 100% 100%;

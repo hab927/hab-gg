@@ -40,13 +40,34 @@
     <h2>HELLO! If you are a recruiter, and you're seeing this, click the dropdown.</h2>
     <h3>(Or if for some reason you want to see what I'm good at and like showing off!)</h3>
 
-    <details open>
-        <summary><b style="color: blue">Yes. Open sesame. I am a recruiter.</b> (you dont have to be a recruiter to click this its just for convenience sake)</summary>
+    <details class="dark-green">
+        <summary><b style="color: cyan">Yes. Open sesame. I am a recruiter.</b> (you dont have to be a recruiter to click this its just for convenience sake)</summary>
         <p>Hi. I made this because it would probably be more convenient to include a section showing off what I'm good at for jobs. If you are seeing this, you probably saw my resume (and CV if you requested it) already. So I won't be rehashing it here.</p>
 
-        <h3>What skills??</h3>
-        <ul>
-            <li>Blender! I've been into modeling and texturing lately, largely spurred on by my involvement in the <i>ULTRAKILL</i> modding community.</li> Here are some of my most recent creations:<br><br>
+        <h2>What skills do you have??</h2>
+
+        <details class="dark-purple">
+            <summary>Unity (C#)!</summary>
+        </details>
+
+        <details class="dark-blue" open>
+            <summary>Blender!</summary>
+            
+            I've been into modeling and texturing lately, largely spurred on by my involvement in the <i>ULTRAKILL</i> modding community.<br><br>
+                
+            Through creating my level, I have learned how to use Blender's basic and advanced modeling tools. I even know some fancy keyboard shortcuts. I also boast the ability to use the texture painting functionality (though I opt not to and texture in <a href="https://krita.org/en/">Krita</a> or <a href="https://libresprite.github.io/">LibreSprite</a> if I have the option.)<br><br>
+            I'm also familiar with the animation tools, lighting tools, and rendering engine. I wouldn't consider myself fluent with <a href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html">Geometry nodes</a>, but I've made my fair share of node graphs to ease rendering, modifying and baking textures for meshes.
+            <br><br>
+            There is also the matter of the Blender Python API. I have only dabbled with this once but my goodness was it fun. I had to use a tool provided by a <a href="https://github.com/bobot-dev">very talented and kind community member</a> to create edge loops in intervals of 5 units to correctly scale textures and UVs for my ULTRAKILL custom level. I discovered that a particular function I needed was not implemented so I decided to contribute to the Blender add-on for myself.
+            <br><br>
+            Ignoring the fact that I worked on this during class, I found myself being very proactive during the time period where I was figuring out how to use Blender's API. In the end I managed to successfully create my desired function: a toggle to only correct the UVs and perform edge cuts ONLY on selected faces. 
+            <br><br>
+            Since the code is not on a public GitHub repository and the dev wishes to not have it shared publicly, I can't share any screenshots of the code. However I do want to show a GIF showing the result of what I wrote just so you know I'm not lying.
+            <br><br>
+            <img src="./assets/setup_example.gif" width=90%>
+            <br><br>
+
+            As for examples of what I've actually made in Blender, I want to show you those too. Here are some of my most recent creations:<br><br>
             <figure>
                 <img src="./assets/metaldetector.png" width="400px">
                 <figcaption>Metal detector! Textured and modeled by me.</figcaption>
@@ -61,16 +82,14 @@
                 <img src="./assets/twistingroom.png" width="600px">
                 <figcaption>One of my twisting rooms for the aforementioned custom level. Textures from ULTRAKILL's base game and modeling by me.</figcaption>
             </figure>
-        </ul>
-        <p></p>
+        </details>
 
     </details>
 
     <h2>Why does this website look like this?</h2>
     <p>
-        I always preferred the look of old early 2000s websites. It's what I grew up with, and I feel like it's a lost art that's going away the further we get. It's probably idiotic to stick to something traditional like this when there's so much more to be learned with new technological advancements in rendering, website design, UI design, and whatnot. But I feel like there's something good about a website where you just have to scroll and read to find out all the information I have to present.
-        <br><br>
-        Never really was a fan of having to click through a billion menus and wait through a ton of animations to get to where I wanted to be. Just one simple website! That's all I really need to show you what I'm about.
+        I always preferred the look of old early 2000s websites. It's what I grew up with, and I feel like it's a lost art that's going away the further we get. It's probably idiotic to stick to something traditional like this when there's so much more to be learned with new technological advancements in rendering, website design, UI design, and whatnot. But I feel like there's something good about a website where you just have to scroll and read to find out all the information I have to present. Also there's just something really charming about working on something that many would be consider to be ugly. It's kind of like my beloved ugly little creature. My mad scientist concoction.
+        <br><br>Just one simple website! That's all I really need to show you what I'm about.
     </p>
     <!-- contact info  -->
     <h2>
@@ -103,6 +122,12 @@
             <th><a href="https://bsky.app/profile/habb.bsky.social">https://bsky.app/profile/habb.bsky.social</a> (I don't use this a lot!...no posts yet)</th>
         </tr>
     </table>
+
+    <h2>Credits // Citations // What Have You</h2>
+    <p>
+        Background images taken from various versions of Windows (Vista, 7, XP).<br>
+        Default font is Times New Roman 14 point font. Dyslexic-friendly font is Comic Sans MS, also 14 point font.
+    </p>
 </body>
 <script src="./scripts/buttons.js"></script>
 <script src="./scripts/tooltip.js"></script>

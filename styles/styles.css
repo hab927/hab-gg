@@ -24,6 +24,33 @@ button {
     position: relative;
 }
 
+details {
+  margin: 10px;
+  border:2px solid white;
+  color:white;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+details.dark-green {
+  background-image: url("../assets/windows_vista_beta_74.jpg");
+}
+details.dark-green a {
+  color:cyan;
+}
+details.dark-green a:visited {
+  color:#FF67FF;
+}
+
+details.dark-blue {
+  color:black;
+  background-image: url("../assets/windows_vista_beta_75.jpg");
+}
+
+details.dark-purple {
+  background-image: url("../assets/windows_vista_beta_107.jpg");
+}
+
 h1, h2, h3 {
     text-align: center;
 }

@@ -147,6 +147,17 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   vertical-align: bottom;
 }
 
+.footer {
+  border: 2px solid blue;
+  margin-top: 10px;
+  padding: 5px;
+  padding-top: 0px;
+  background-image: url("../assets/windows_xp_37.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;

@@ -78,7 +78,11 @@ details.dark-red {
 }
 
 h1, h2, h3 {
-    text-align: center;
+  text-decoration-line: underline;
+  text-align: center;
+}
+h2, h3 {
+  margin-bottom: 0px;
 }
 
 img {
@@ -161,6 +165,11 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   padding: 1px;
   margin: 1px;
   vertical-align: middle;
+}
+
+.flashing {
+  text-shadow: 
+    -1px -1px 0 #000;
 }
 
 .footer {

@@ -43,7 +43,11 @@
     <p>Suffice to say, without getting into much detail, I'm disillusioned with the current tech industry. I'm not a fan of the direction it's headed where it seems to favor the pursuit of advancing technology for convenience while stifling creativity.</p>
     <p>I'm seeking to make meaningful changes in the smaller communities I am involved in rather than trying to make a big difference in the world. I figure it pays off more to see the changes I make in people's lives, and supporting smaller communities is a good way to see that firsthand.</p>
 
-    <h2>What do I even do?</h2>
+    <h2>
+        <img class="flanking-image" src="./assets/question-mark.gif">
+        What do I even do?
+        <img class="flanking-image" src="./assets/question-mark.gif">
+    </h2>
 
     <p> I play games, and on occasion make games. <b>For more info on that, scroll to the bottom of this page and click on my itch.io link!</b> My most fruitful venture right now is a custom level I'm creating using an ULTRAKILL custom editor called Rude Level Editor, a proprietary offshoot of the official <a href="https://docs.tundra.pitr.dev/">Tundra Level Editor</a>. Here are some pictures if you're curious (taken from the Unity Editor):
         <br><br>
@@ -83,7 +87,7 @@
 
             <p>In essence, we have a "Dream" world and a "Nightmare" world. The two environments use the same geometry with changes in player hazards, platforms, and whatnot.</p>
 
-            <p>The thing I am most proud to show off is the serialization algorithm that I wrote for the game. Serialization is just a fancy word for "saving and loading".</p>
+            <p>The thing I am most proud to show off is the <b>serialization algorithm</b> that I wrote for the game. Serialization is just a fancy word for "saving and loading". I had to learn how to save the current level, the current player position, and a ton of other options while keeping the functionality to save everything and load everything at will. The process essentially boiled down to saving necessary data to a JSON, serializing it, and encrypting the data. This data then had to be deserialized and decrypted in order to load it back into the game.</p>
 
             Here I also learned:
             <ul>
@@ -94,7 +98,31 @@
             </ul>
 
             <h3>Infinity Ball</h3>
-            <h3>Runway Bride -- My ULTRAKILL custom level</h3>
+            <div class="center-container">
+                <img class="fancy" src="./assets/infinity-ball.png" width=40%>
+            </div>
+
+            <p>Infinity Ball was my pride and joy when it comes to solo development in Unity. It's essentially "What if <a href="https://store.steampowered.com/app/2379780/Balatro/">Balatro</a> but 8-ball." It's an 8-ball roguelike. This project served mostly as a conduit for me to learn other skills past what I learned during the creation of Silly Sphere and Reflection of a Dream. Also, I know it's hard to tell, but the background is actually an animated <a href="https://en.wikipedia.org/wiki/Julia_set">Julia set</a> fractal. It took me an entire day to learn how to make in HLSL, but it looks really cool so I can't get rid of it.</p>
+
+            <p>This project taught me about balancing upgrade systems. It also was my first experience showing off a project to my friends for playtesting. For Reflections of a Dream, one of my other team members handled playtesting + feedback, so I didn't really know how the process worked back then.</p>
+
+            <p>Other things I learned while working on Infinity-Ball:</p>
+            <ul>
+                <li>working within a 2D game environment and rendering pipeline</li>
+                <li>how to texture spheres and have them spin when hit (this was actually not that hard to do but I got it working with a very complex method)</li>
+                <li>Unity's animation system</li>
+                <li>how to use coroutines responsibly</li>
+                <li>good C# code organization and practices (this was something that I hadn't properly learned how to do until I made this game, frankly)</li>
+            </ul>
+
+            <h3>VENDetta</h3>
+
+            <div class="center-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0um2AtN2G7Q?si=oO1KmIjzvGf0Vm0X" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p>VENDetta is my (current) magnum opus in Unity. Naturally, you would think I've had enough after going "What about 8-Ball Balatro?" Then I went ahead and extended the concept to vending machines.</p>
+
         </details>
 
         <details class="dark-blue">

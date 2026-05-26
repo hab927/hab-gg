@@ -27,7 +27,7 @@
     <img src="./assets/dancing-a.gif" width="80px">
     <img src="./assets/dancing-b.gif" width="80px">
 </div>
-    <h1>
+    <h1 style="text-decoration-line: none;">
         <img class="flanking-image" src="./assets/star6.gif">
         Hello! welcome to my web page.
         <img class="flanking-image" src="./assets/star6.gif">
@@ -95,9 +95,28 @@
                 <img class="fancy" src="./assets/computer-sim-2.png" width=30%>
             </div>
 
-            <p>I'm showing this one off first because I'm so dang proud of it. </p>
+            <p>I'm showing this one off first because I'm so dang proud of it. This was my final project for my computer graphics class. The class runs a hall of fame and I ended up getting second place (only behind the guy that had the time and motivation to make a project that included multiplayer gameplay).</p>
 
-            <h3>Bit-Bot</h3>
+            <p>There are many fun features of this thing!</p>
+            <ul>
+                <li>The manual mentions you can toggle the lamp on/off, and change the color. You can do the same with the screen.</li>
+                <li>You can change the celestial body on the globe</li>
+                <li>You can change the time of day.</li>
+            </ul>
+
+            <p>The keyboard is responsive and honestly probably the easiest (but ugliest code-wise) of the entire thing. It's just a bunch of cubes mapped to translate down when their respective keys are pressed (QWERTY only, sorry AZERTY and QWERTZ users), and up when they're released. The TAB button is red because it doesn't work with some browsers.</p>
+
+            <p>The lamp itself is two light sources. One of them is a point light that illuminates the inside of the lamp. It has a relatively bright intensity but a low range. The other light source is a spot light that illuminates the desk at an angle. I don't know why, but unfortunately, it doesn't work properly anymore. Must be a Three.js thing. I will fix it eventually (and update this website once I do so!)</p>
+
+            <p>The globe is just a spinning sphere with an animation.</p>
+
+            <p>The hardest part of this entire project was, unsurprisingly, the screen itself.</p>
+
+            <h4 style="text-decoration-line: underline;">The Simulator's Screen</h4>
+
+            <p>The screen is a texture that updates whenever a key is pressed. In order to actually have visual response to the user's input, I take a big string and split it such that it fits the resolution of the screen. </p>
+
+            <h2>Bit-Bot</h2>
 
             <div class="center-container">
                 <img class="fancy" src="./assets/bit-bot.png" width=30%>

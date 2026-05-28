@@ -76,6 +76,12 @@ details.dark-red {
   border: 2px solid red;
   background-image: url("../assets/dell_17.jpg");
 }
+details.dark-red a {
+  color:greenyellow;
+}
+details.dark-red a:visited {
+  color:orange;
+}
 
 h1, h2, h3 {
   text-decoration-line: underline;

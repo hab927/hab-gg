@@ -1,9 +1,9 @@
 html {
+  overflow-x: hidden;
   font-family: "Times New Roman";
 }
 html.font-alt {
-  font-family: "Comic Sans MS";
-  font-size: 14px;
+  font-family: 'ComicSans';
 }
 
 /* https://stackoverflow.com/questions/25444657/how-to-achieve-this-bevel-button-in-css */
@@ -21,7 +21,6 @@ button {
     padding: 5px 5px;;
     font-size: 15px;
     line-height: 14px;
-    position: relative;
 }
 
 a.bright {
@@ -49,16 +48,17 @@ details.dark-green a:visited {
   color:#FF67FF;
 }
 
-details.dark-blue {
+details.blender {
   border:2px solid turquoise;
   color:white;
-  background-image: url("../assets/windows_vista_beta_75.jpg");
+  background-image: url("../assets/dell_40.jpg");
+  background-size: 120%;
 }
-details.dark-blue a {
-  color:blue;
+details.blender a {
+  color:rgb(47, 47, 186);
 }
 details.dark-green a:visited {
-  color:darkmagenta;
+  color:rgb(255, 131, 255);
 }
 
 details.dark-purple {
@@ -151,6 +151,49 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 
 /* end citation */
 
+/* IDs */
+#main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#everything-else {
+  flex: 1;
+}
+
+#sidebar-container {
+  background-image: url("../assets/dell_10.jpg");
+  background-position-x: center;
+  flex: 100% 100% 0;
+  width: 18%;
+  max-width: 200px;
+  margin: 10px;
+  border: 4px solid black;
+  justify-content: space-between;
+}
+
+#sidebar {
+  flex-direction: column;
+  font-weight: bold;
+  color: greenyellow;
+  margin: auto;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 4px;
+  text-align: center;
+}
+
+#sidebar a {
+  color: cyan;
+}
+
+#sidebar a:visited {
+  color: magenta;
+}
+
+/* classes */
+
 .center-image {
     padding: 2em;
     display: block;
@@ -190,10 +233,20 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 }
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  cursor: pointer;
+    scale: 150%;
+    visibility: hidden;
+    width: 60px;
+    height: 40px;
+    background-image: url("../assets/copier.gif");
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
 }
 
 .warning {

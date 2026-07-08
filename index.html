@@ -8,7 +8,9 @@
     <meta name="author" content="hab">
     <link rel="icon" type="image/x-icon" href="./assets/hot-air-balloon-spinning.gif">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
     <title>Hab's Webpage</title>
+    <base target="_blank">
 </head>
 <body class="bg-image">
 <div class="wrapper">
@@ -33,286 +35,313 @@
         <img class="flanking-image" src="./assets/star6.gif">
         <div>
             <button id="defaultFontButton">Default Font</button>
-            <button id="dyslexicFontButton" style="font-family: 'Comic Sans MS'">Dyslexia-Friendly Font</button>
+            <button id="dyslexicFontButton" style="font-family: 'ComicSans'">Dyslexia-Friendly Font</button>
         </div>
     </h1>
 
-    <h2>
-        <img class="flanking-image" src="./assets/speaker.gif">
-        Tell me about yourself!!!
-        <img class="flanking-image" src="./assets/speaker.gif">
-    </h2>
-    <p>By the time you're reading this, I've probably already graduated from university with a computer science degree. I'm gonna be one of the many people looking for jobs in this extremely volatile job market (certainly NOT looking forward to this), but I'm doing what I can to improve the mood around here!</p>
-    <p>Some things that I'm comfortalbe sharing with the internet are that I'm in my early 20s, I'm from California, and I love and adore game design.</p>
-    <p>Suffice to say, without getting into much detail, I'm disillusioned with the current tech industry. I'm not a fan of the direction it's headed where it seems to favor the pursuit of advancing technology for convenience while stifling creativity.</p>
-    <p>I'm seeking to make meaningful changes in the smaller communities I am involved in rather than trying to make a big difference in the world. I figure it pays off more to see the changes I make in people's lives, and supporting smaller communities is a good way to see that firsthand.</p>
+    <div id="main-content">
+        <div id="everything-else">
+            <h2>
+                <img class="flanking-image" src="./assets/speaker.gif">
+                Tell me about yourself!!!
+                <img class="flanking-image" src="./assets/speaker.gif">
+            </h2>
+            <p>By the time you're reading this, I've probably already graduated from university with a computer science degree. I'm gonna be one of the many people looking for jobs in this extremely volatile job market (certainly NOT looking forward to this), but I'm doing what I can to improve the mood around here!</p>
+            <p>Some things that I'm comfortalbe sharing with the internet are that I'm in my early 20s, I'm from California, and I love and adore game design.</p>
+            <p>Suffice to say, without getting into much detail, I'm disillusioned with the current tech industry. I'm not a fan of the direction it's headed where it seems to favor the pursuit of advancing technology for convenience while stifling creativity.</p>
+            <p>I'm seeking to make meaningful changes in the smaller communities I am involved in rather than trying to make a big difference in the world. I figure it pays off more to see the changes I make in people's lives, and supporting smaller communities is a good way to see that firsthand.</p>
+    
+            <h2>
+                <img class="flanking-image" src="./assets/question-mark.gif">
+                What do I even do?
+                <img class="flanking-image" src="./assets/question-mark.gif">
+            </h2>
+    
+            <p> I play games, and on occasion make games. <b>For more info on that, scroll to the bottom of this page and click on my itch.io link!</b> My most fruitful venture right now is a custom level I'm creating using an ULTRAKILL custom editor called Rude Level Editor, a proprietary offshoot of the official <a href="https://docs.tundra.pitr.dev/">Tundra Level Editor</a>. Here are some pictures if you're curious (taken from the Unity Editor):
+                <br><br>
+                I'm theming it around an airport design. I'm taking inspiration from the new Fraud layer, which uses non-Euclidean geometry, camera and gravity trickery to make you think you're working with an impossible space. It's really cool! I implore you to check out the base game if you can.
+            </p>        
+    
+            <h2>HELLO! If you are a recruiter, and you're seeing this, click the dropdown.</h2>
+            <h3>(Or if for some reason you want to see what I'm good at and like showing off!)</h3>
+    
+            <details class="dark-green" open="true">
+                <summary><b style="color: cyan">
+                    <span class="flashing">CLICK THIS AWESOME DROPDOWN TO SEE MY SKILLS & PROJECTS!!</span>
+                </b></summary>
+                <p>Hi. I made this because it would probably be more convenient to include a section showing off what I'm good at for jobs. If you are seeing this, you probably saw my resume (and CV if you requested it) already. So I won't be rehashing it here.</p>
+    
+                <h2 style="margin-bottom: 0px;">
+                    What skills do you have?? And what have you made?
+                </h2>
+                <div class="center-container" style="margin-top: 0px;">
+                    <img class="flanking-image" src="./assets/lightbulb.gif" style="margin-right: 10%;">
+                    <img class="flanking-image" src="./assets/hammer-anvil.gif">
+                </div>
+    
+                <details class="dark-red">
+                    <summary><b>JavaScript!</b> Fair share of class projects and personal projects here. Though I'm going to share my proudest ones.</summary>
+    
+                    <p>Regarding JavaScript I've made a good amount of things using it. I find it simultaneously relaxing and frustrating to work with. Sometimes it'll do what you want, and other times you have to fish in the deepest lake to figure out what went wrong. Though there's nothing quite like it.</p>
+    
+                    <p>Millions of libraries exist for this language. But I've got my fortes:</p>
+                    <ul>
+                        <li>Three.js. You will hear a lot about this one later, and you have probably already read about it in my CV/resume. </li>
+                        <li>Discord.js. Yes I have made bots before, and websites that use Discord's API. I actually used to use Discord.py but I figured it was too limited and didn't do enough of what I wanted, so I switched over.</li>
+                        <li>Phaser.js. Had my fair share of projects here. I made a platformer, shoot-'em-up, and tower defense using this library.</li>
+                        <li>Node.js. Almost everyone uses this one. Pretty much mandatory to learn if you want to develop any kind of modern website using JavaScript.</li>
+                    </ul>
+    
+                    <h2>The Magnum Opus: Three.js Computer Simulator</h2>
+                    
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/computer-simulator.png" width=30%>
+                        <img class="fancy" src="./assets/computer-sim-2.png" width=30%>
+                    </div>
+    
+                    <p>I'm showing this one off first because I'm so dang proud of it. This was my final project for my computer graphics class. The class runs a hall of fame and I ended up getting second place (only behind the guy that had the time and motivation to make a project that included multiplayer gameplay).</p>
+    
+                    <p>There are many fun features of this thing!</p>
+                    <ul>
+                        <li>The manual mentions you can toggle the lamp on/off, and change the color. You can do the same with the screen.</li>
+                        <li>You can change the celestial body on the globe</li>
+                        <li>You can change the time of day.</li>
+                    </ul>
+    
+                    <p>The keyboard is responsive and honestly probably the easiest (but ugliest code-wise) of the entire thing. It's just a bunch of cubes mapped to translate down when their respective keys are pressed (QWERTY only, sorry AZERTY and QWERTZ users), and up when they're released. The TAB button is red because it doesn't work with some browsers.</p>
+    
+                    <p>The lamp itself is two light sources. One of them is a point light that illuminates the inside of the lamp. It has a relatively bright intensity but a low range. The other light source is a spot light that illuminates the desk at an angle. I don't know why, but unfortunately, it doesn't work properly anymore. Must be a Three.js thing. I will fix it eventually (and update this website once I do so!)</p>
+    
+                    <p>The globe is just a spinning sphere with an animation.</p>
+    
+                    <p>The hardest part of this entire project was, unsurprisingly, the screen itself.</p>
+    
+                    <h4 style="text-decoration-line: underline;">The Simulator's Screen</h4>
+    
+                    <p>The screen is a texture that updates whenever a key is pressed. In order to actually have visual response to the user's input, I take a big string and split it such that it fits the resolution of the screen. Now in order to do this, you have to overwrite the texture built using the string split accordingly. This resulting texture updates every time the string is updated, which means that the screen updates whenever you type. This gives the impression of a terminal!</p>
+    
+                    <h2>Bit-Bot</h2>
+    
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/bit-bot.png" width=30%>
+                    </div>
+    
+                    <p>Bit-Bot is a web game that I created in 2025 using the Phaser.js library. I went above and beyond for this assignment frankly, and there was a period of time where people would try to speedrun this game to see how fast they could beat the entire thing.</p>
+    
+                    <p>So the main things that I learned while making this are how to texture and make colliders interact within Phaser.js. Since I personally feel like Phaser is a "tutorial" library to acquaint you with game design using a high-level library, I feel like I mainly improved from a game designer perspective than from a programming one. That being said, some outside of the box thinking was done on my part to go beyond the assignment spec.</p>
+                    <ul>
+                        <li><b>Dialogue --</b> I did not need to add dialogue. But I did it anyway. This is done by just having an updating text box just above the player, and having it change depending on the event. Also added a little "talking" sound.</li>
+                        <li><b>Coins & Animation --</b> We did not have to add these things, but animating it was the harder part. I had to animate it in a separate software and import the frames.</li>
+                        <li><b>Consistent physics --</b> From what I played when going through other peoples' games, they left a bit of "slide" and "acceleration" that never ended. I planned to clamp the player's velocity and have a quick startup and slow down for the player, kind of like <a href="https://store.steampowered.com/app/504230/Celeste/">Celeste</a>.</li>
+                        <li><b>Door Travel --</b> Traveling between doors was something that I didn't originally plan, but I decided to include it anyway when I saw the door sprite. I couldn't leave it hanging. I accomplished this by simply changing the player's position and resetting the physics between teleportations.</li>
+                        <li><b>Double Jump! --</b> The double jump is my favorite part of this. You get it and there's a huge "DOUBLE JUMP!" splash text. This is pretty much the culmination of all the previous principles, nothing entirely new here besides adding a check for if the player had already jumped twice.</li>
+                    </ul>
+    
+                    <h2><a href="https://github.com/polynomial115/polynomial-client">Polynomial</a></h2>
+    
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/polynomial-1.png" width=25%>
+                        <img class="fancy" src="./assets/polynomial-4.png" width=25%>
+                    </div>
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/polynomial-2.png" width=25%>
+                        <img class="fancy" src="./assets/polynomial-3.png" width=25%>
+                    </div>
+    
+                    <p>This is a project that I worked on during my sophomore year at university with a group of friends. The project concerned a task-management activity built within Discord itself using its Activity SDK (software development kit). It taught me first and foremost how to meaningfully work in a team development environment, and I had a lot of fun doing it!</p>
+    
+                    <p>The main purpose of the project was to construct a <a href="https://www.scrum.org/resources/what-scrum-module">Scrum</a>-focused task manager application. Since we had to use the Agile methodology for class, we decided to implement something that people can use within Discord itself. I thought that this project was a lot of fun!</p>
+    
+                    <p>The main skills I learned and used in this project were:</p>
+                    <ul>
+                        <li>Extensive use of and, as a result, familiarity with the Discord.js library</li>
+                        <li>Lots of React usage, as well as sweetalert2's modal system for popups</li>
+                        <li>Experience working with TypeScript for writing different pages across the application</li>
+                    </ul>
+                </details>
+    
+                <details class="dark-purple">
+                    <summary><b>Unity!</b> This is my go-to game engine. I'm very good at using it and am always willing and ready to learn more about it.</summary>
+                    <br>
+                    For specifics on what I'm good at, I am primarily a programmer in C# and I occasionally dabble in Shader programming (HLSL) and creation using the built-in Shader Graph tool. You will find it in another section, but I do have a good grasp on how graphics rendering is handled in different engines. Generally speaking however, it is the same concept all around: render stuff in a 3-dimensional environment, hand off programming to the GPU, rasterize, and put it on your screen.
+                    <br>
+                    <p>Here is a list of my skills to get you acquainted:</p>
+                    <ul>
+                        <li>Fluency with Unity navigation and C#. If not, I learn very quickly. I am used to reading the Unity documentation, trust me. :)</li>
+                        <li>Experience creating first-person and third-person game environments</li>
+                        <li>Experience with creating UIs using Unity's build in TextMeshPro objects and Canvases to create menus.</li>
+                        <li>Familiarity with different rendering methods and compression methods used by Unity's import settings and renderers</li>
+                        <li>Familiarity with HLSL and Unity's shader graph capabilities</li>
+                    </ul>
+                    <h3>Silly Sphere</h3>
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/sillysphere-1.png" width=30%>
+                        <img class="fancy" src="./assets/sillysphere-2.png" width=30%>
+                        <img class="fancy" src="./assets/sillysphere-3.png" width=30%>
+                    </div>
+                    No you are not seeing things. Those cubes in the right-hand image are actually Hornet from Hollow Knight: Silksong.<br><br>
+                    My first foray into Unity was a class project that I dubbed <a href="https://hotairballooon.itch.io/silly-sphere">Silly Sphere</a>. This was a very simple marble rolling game. Think Super Monkey Ball. Either way, it taught me the basics like Components and writing scripts for Rigidbodies and collision handling. It taught me pretty much everything I needed to make a simple physics environment and control scheme. I also learned how to make menus and UI using Canvases!
+    
+                    <h3>Reflection of a Dream</h3>
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/rofd-1.png" width=30%>
+                        <img class="fancy" src="./assets/rofd-2.png" width=30%>
+                        <img class="fancy" src="./assets/rofd-3.png" width=30%>
+                    </div>
+                    <p>Reflection of a Dream is a game that I made for the same class. This time, I had to collaborate with a team. Together we managed to create a world-swap platformer.</p>
+    
+                    <p>In essence, we have a "Dream" world and a "Nightmare" world. The two environments use the same geometry with changes in player hazards, platforms, and whatnot.</p>
+    
+                    <p>The thing I am most proud to show off is the <b>serialization algorithm</b> that I wrote for the game. Serialization is just a fancy word for "saving and loading". I had to learn how to save the current level, the current player position, and a ton of other options while keeping the functionality to save everything and load everything at will. The process essentially boiled down to saving necessary data to a JSON, serializing it, and encrypting the data. This data then had to be deserialized and decrypted in order to load it back into the game.</p>
+    
+                    Here I also learned:
+                    <ul>
+                        <li>how to create puzzle gameplay and seamless dimensional shifting</li>
+                        <li>how to do audio management (music, SFX, volume control)</li>
+                        <li>integration of mouse movement into gameplay</li>
+                        <li>better environment lighting and reinforcement of level design principles to guide the player instead of confuse them (showing just the right amount of information)</li>
+                    </ul>
+    
+                    <h3>Infinity Ball</h3>
+                    <div class="center-container">
+                        <img class="fancy" src="./assets/infinity-ball.png" width=40%>
+                    </div>
+    
+                    <p>Infinity Ball was my pride and joy when it comes to solo development in Unity. It's essentially "What if <a href="https://store.steampowered.com/app/2379780/Balatro/">Balatro</a> but 8-ball." It's an 8-ball roguelike. This project served mostly as a conduit for me to learn other skills past what I learned during the creation of Silly Sphere and Reflection of a Dream. Also, I know it's hard to tell, but the background is actually an animated <a href="https://en.wikipedia.org/wiki/Julia_set">Julia set</a> fractal. It took me an entire day to learn how to make in HLSL, but it looks really cool so I can't get rid of it.</p>
+    
+                    <p>This project taught me about balancing upgrade systems. It also was my first experience showing off a project to my friends for playtesting. For Reflections of a Dream, one of my other team members handled playtesting + feedback, so I didn't really know how the process worked back then.</p>
+    
+                    <p>Other things I learned while working on Infinity-Ball:</p>
+                    <ul>
+                        <li>working within a 2D game environment and rendering pipeline</li>
+                        <li>how to texture spheres and have them spin when hit (this was actually not that hard to do but I got it working with a very complex method)</li>
+                        <li>Unity's animation system</li>
+                        <li>how to use coroutines responsibly</li>
+                        <li>good C# code organization and practices (this was something that I hadn't properly learned how to do until I made this game, frankly)</li>
+                    </ul>
+    
+                    <h2>VENDetta</h2>
+    
+                    <div class="center-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0um2AtN2G7Q?si=oO1KmIjzvGf0Vm0X" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <p><a href="https://hotairballooon.itch.io/vendetta">VENDetta</a> is my (current) magnum opus in Unity. Naturally, you would think I've had enough after going "What about 8-Ball Balatro?" Then I went ahead and extended the concept to vending machines. The result is something as beautiful as cookies & cream ice cream on a ninety degree day. This game is something that, by all accounts, should not exist, yet it does anyway. Which is pretty in line with my philosophy for making stuff in general. If you've got an idea, feel free to try it out!</p>
+    
+                    <p>Above all else, VENDetta taught me how to produce something that can meaningfully be called a "game" in a limited amount of time. Actually, a VERY limited amount of time (1 week!) This was for the 7-Day Roguelike Game Jam hosted by itch.io themselves. Ideation, designing, coding, artwork, and everything had to be completed in seven days, or it didn't count. Let's just say that the 7-Eleven cashiers near my house saw me often that week, buying Monster Energy (specifically Ultra Blue Hawaiian) and 5-Hour Energy.</p>
+    
+                    <p>I joined the game jam to really push myself. Often I get very stuck when working on things and stop way before it's even near halfway done. VENDetta is an exception, and the deadline really did push me to work as hard as I did on this.</p>
+    
+                    <p>By this point, I had attained near fluency of the Unity game engine. But I still learned new things making VENDetta:</p>
+                    <ul>
+                        <li>how to make a unique AND replayable gameplay loop without it being repetitive</li>
+                        <li>even better code and asset organization</li>
+                        <li>how to truly handle randomness in game design (seeding, random item generation, meaningfully different game modifiers)</li>
+                        <li>pacing between levels and difficulty pacing</li>
+                        <li>delivery and reception of feedback (since this was a solo venture, I got even better feedback. and from strangers this time!)</li>
+                    </ul>
+    
+                    <p>Did I win the game jam? No. Of course I didn't! Everybody's so talented! But I had a wonderful time making this game, and I'd totally be happy to make another.</p>
+    
+                </details>
+    
+                <details class="blender" open="true">
+                    <summary><b>Blender!</b> My go-to modeling software! I know how to texture and model in Blender, and am familiar with the Python API.</summary>
+                    
+                    <p>I've been into modeling and texturing lately, largely spurred on by my involvement in the <i>ULTRAKILL</i> modding community.</p>
 
-    <h2>
-        <img class="flanking-image" src="./assets/question-mark.gif">
-        What do I even do?
-        <img class="flanking-image" src="./assets/question-mark.gif">
-    </h2>
-
-    <p> I play games, and on occasion make games. <b>For more info on that, scroll to the bottom of this page and click on my itch.io link!</b> My most fruitful venture right now is a custom level I'm creating using an ULTRAKILL custom editor called Rude Level Editor, a proprietary offshoot of the official <a href="https://docs.tundra.pitr.dev/">Tundra Level Editor</a>. Here are some pictures if you're curious (taken from the Unity Editor):
-        <br><br>
-        I'm theming it around an airport design. I'm taking inspiration from the new Fraud layer, which uses non-Euclidean geometry, camera and gravity trickery to make you think you're working with an impossible space. It's really cool! I implore you to check out the base game if you can.
-    </p>        
-
-    <h2>HELLO! If you are a recruiter, and you're seeing this, click the dropdown.</h2>
-    <h3>(Or if for some reason you want to see what I'm good at and like showing off!)</h3>
-
-    <details class="dark-green">
-        <summary><b style="color: cyan">
-            <span class="flashing">CLICK THIS AWESOME DROPDOWN TO SEE MY SKILLS & PROJECTS!!</span>
-        </b></summary>
-        <p>Hi. I made this because it would probably be more convenient to include a section showing off what I'm good at for jobs. If you are seeing this, you probably saw my resume (and CV if you requested it) already. So I won't be rehashing it here.</p>
-
-        <h2 style="margin-bottom: 0px;">
-            What skills do you have?? And what have you made?
-        </h2>
-        <div class="center-container" style="margin-top: 0px;">
-            <img class="flanking-image" src="./assets/lightbulb.gif" style="margin-right: 10%;">
-            <img class="flanking-image" src="./assets/hammer-anvil.gif">
+                    <figure>
+                        <img src="assets/win95sound.png" width="75%">
+                        <figcaption>3D recreation of the Windows 95 Sound Recorder that I made in Blender over a few hours.</figcaption>
+                    </figure>
+                        
+                    <p>Through creating my level, I have learned how to use Blender's basic and advanced modeling tools. I even know some fancy keyboard shortcuts. I also boast the ability to use the texture painting functionality (though I opt not to and texture in <a href="https://krita.org/en/">Krita</a> or <a href="https://libresprite.github.io/">LibreSprite</a> if I have the option.)</p>
+                    I'm also familiar with the animation tools, lighting tools, and rendering engine. I wouldn't consider myself fluent with <a href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html">Geometry nodes</a>, but I've made my fair share of node graphs to ease rendering, modifying and baking textures for meshes.
+                    <br><br>
+                    There is also the matter of the Blender Python API. I have only dabbled with this once but my goodness was it fun. I had to use a tool provided by a <a href="https://github.com/bobot-dev">very talented and kind community member</a> to create edge loops in intervals of 5 units to correctly scale textures and UVs for my ULTRAKILL custom level. I discovered that a particular function I needed was not implemented so I decided to contribute to the Blender add-on for myself.
+                    <br><br>
+                    Ignoring the fact that I worked on this during class, I found myself being very proactive during the time period where I was figuring out how to use Blender's API. In the end I managed to successfully create my desired function: a toggle to only correct the UVs and perform edge cuts ONLY on selected faces. 
+                    <br><br>
+                    Since the code is not on a public GitHub repository and the dev wishes to not have it shared publicly, I can't share any screenshots of the code. However I do want to show a GIF showing the result of what I wrote just so you know I'm not lying.
+                    <br><br>
+                    <img src="./assets/setup_example.gif" width=70%>
+                    <br><br>
+    
+                    As for examples of what I've actually made in Blender, I want to show you those too. Here are some of my most recent creations:<br><br>
+                    <figure>
+                        <img src="./assets/metaldetector.png" width=40%>
+                        <figcaption>Metal detector! Textured and modeled by me.</figcaption>
+                    </figure>
+                    <br><br>
+                    <figure>
+                        <img src="./assets/baggageclaim.png" width=40%>
+                        <figcaption>Baggage claim conveyor! Textured and modeled by me.</figcaption>
+                    </figure>
+                    <br><br>
+                    <figure>
+                        <img src="./assets/twistingroom.png" width=40%>
+                        <figcaption>One of my twisting rooms for the aforementioned custom level. Textures from ULTRAKILL's base game and modeling by me.</figcaption>
+                    </figure>
+                </details>
+    
+            </details>
+    
+            <h2>Why does this website look like this?</h2>
+            <p>
+                I always preferred the look of old early 2000s websites. It's what I grew up with, and I feel like it's a lost art that's going away the further we get. It's probably idiotic to stick to something traditional like this when there's so much more to be learned with new technological advancements in rendering, website design, UI design, and whatnot. But I feel like there's something good about a website where you just have to scroll and read to find out all the information I have to present. Also there's just something really charming about working on something that many would be consider to be ugly. It's kind of like my beloved ugly little creature. My mad scientist concoction.
+                <br><br>Just one simple website! That's all I really need to show you what I'm about.
+            </p>
+            <!-- contact info  -->
+            <h2>
+                <img class="flanking-image" src="./assets/phone.gif">
+                Socials // Contact me!
+                <img class="flanking-image" src="./assets/phone.gif">
+            </h2>
+    
+            <img class="center-image" src="./assets/letter.gif">
+    
+            <table>
+                <tr>
+                    <th>E-mail</th>
+                    <th>
+                        <button id="emailButton">
+                            ---==<  Click to copy!  >==---
+                            <div class="tooltip" id="copiedTT">
+                                <span class="flashing">
+                                    Copied!
+                                </span>
+                            </div>
+                        </button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <th><a href="https://github.com/hab927">https://github.com/hab927</a></th>
+                </tr>
+                <tr>
+                    <th>Itch.io</th>
+                    <th><a href="https://hotairballooon.itch.io/">https://hotairballooon.itch.io/</a></th>
+                </tr>
+                <tr>
+                    <th>YouTube</th>
+                    <th><a href="https://www.youtube.com/@habibble">https://www.youtube.com/@habibble</a></th>
+                </tr>
+                <tr>
+                    <th>BlueSky</th>
+                    <th><a href="https://bsky.app/profile/habb.bsky.social">https://bsky.app/profile/habb.bsky.social</a> (I don't use this a lot!...no posts yet)</th>
+                </tr>
+            </table>
         </div>
-
-        <details class="dark-red">
-            <summary><b>JavaScript!</b> Fair share of class projects and personal projects here. Though I'm going to share my proudest ones.</summary>
-
-            <p>Regarding JavaScript I've made a good amount of things using it. I find it simultaneously relaxing and frustrating to work with. Sometimes it'll do what you want, and other times you have to fish in the deepest lake to figure out what went wrong. Though there's nothing quite like it.</p>
-
-            <p>Millions of libraries exist for this language. But I've got my fortes:</p>
-            <ul>
-                <li>Three.js. You will hear a lot about this one later, and you have probably already read about it in my CV/resume. </li>
-                <li>Discord.js. Yes I have made bots before, and websites that use Discord's API. I actually used to use Discord.py but I figured it was too limited and didn't do enough of what I wanted, so I switched over.</li>
-                <li>Phaser.js. Had my fair share of projects here. I made a platformer, shoot-'em-up, and tower defense using this library.</li>
-                <li>Node.js. Almost everyone uses this one. Pretty much mandatory to learn if you want to develop any kind of modern website using JavaScript.</li>
-            </ul>
-
-            <h2>The Magnum Opus: Three.js Computer Simulator</h2>
             
-            <div class="center-container">
-                <img class="fancy" src="./assets/computer-simulator.png" width=30%>
-                <img class="fancy" src="./assets/computer-sim-2.png" width=30%>
+        <div id="sidebar-container">
+            <div id="sidebar">
+                <h2>Quick Links</h2>
+                <br><br>
+                <a href="https://hab927.github.io/computer-simulator/">Three.js Computer</a>
             </div>
+        </div>
+    </div>
 
-            <p>I'm showing this one off first because I'm so dang proud of it. This was my final project for my computer graphics class. The class runs a hall of fame and I ended up getting second place (only behind the guy that had the time and motivation to make a project that included multiplayer gameplay).</p>
-
-            <p>There are many fun features of this thing!</p>
-            <ul>
-                <li>The manual mentions you can toggle the lamp on/off, and change the color. You can do the same with the screen.</li>
-                <li>You can change the celestial body on the globe</li>
-                <li>You can change the time of day.</li>
-            </ul>
-
-            <p>The keyboard is responsive and honestly probably the easiest (but ugliest code-wise) of the entire thing. It's just a bunch of cubes mapped to translate down when their respective keys are pressed (QWERTY only, sorry AZERTY and QWERTZ users), and up when they're released. The TAB button is red because it doesn't work with some browsers.</p>
-
-            <p>The lamp itself is two light sources. One of them is a point light that illuminates the inside of the lamp. It has a relatively bright intensity but a low range. The other light source is a spot light that illuminates the desk at an angle. I don't know why, but unfortunately, it doesn't work properly anymore. Must be a Three.js thing. I will fix it eventually (and update this website once I do so!)</p>
-
-            <p>The globe is just a spinning sphere with an animation.</p>
-
-            <p>The hardest part of this entire project was, unsurprisingly, the screen itself.</p>
-
-            <h4 style="text-decoration-line: underline;">The Simulator's Screen</h4>
-
-            <p>The screen is a texture that updates whenever a key is pressed. In order to actually have visual response to the user's input, I take a big string and split it such that it fits the resolution of the screen. Now in order to do this, you have to overwrite the texture built using the string split accordingly. This resulting texture updates every time the string is updated, which means that the screen updates whenever you type. This gives the impression of a terminal!</p>
-
-            <h2>Bit-Bot</h2>
-
-            <div class="center-container">
-                <img class="fancy" src="./assets/bit-bot.png" width=30%>
-            </div>
-
-            <p>Bit-Bot is a web game that I created in 2025 using the Phaser.js library. I went above and beyond for this assignment frankly, and there was a period of time where people would try to speedrun this game to see how fast they could beat the entire thing.</p>
-
-            <p>So the main things that I learned while making this are how to texture and make colliders interact within Phaser.js. Since I personally feel like Phaser is a "tutorial" library to acquaint you with game design using a high-level library, I feel like I mainly improved from a game designer perspective than from a programming one. That being said, some outside of the box thinking was done on my part to go beyond the assignment spec.</p>
-            <ul>
-                <li><b>Dialogue --</b> I did not need to add dialogue. But I did it anyway. This is done by just having an updating text box just above the player, and having it change depending on the event. Also added a little "talking" sound.</li>
-                <li><b>Coins & Animation --</b> We did not have to add these things, but animating it was the harder part. I had to animate it in a separate software and import the frames.</li>
-                <li><b>Consistent physics --</b> From what I played when going through other peoples' games, they left a bit of "slide" and "acceleration" that never ended. I planned to clamp the player's velocity and have a quick startup and slow down for the player, kind of like <a href="https://store.steampowered.com/app/504230/Celeste/">Celeste</a>.</li>
-                <li><b>Door Travel --</b> Traveling between doors was something that I didn't originally plan, but I decided to include it anyway when I saw the door sprite. I couldn't leave it hanging. I accomplished this by simply changing the player's position and resetting the physics between teleportations.</li>
-                <li><b>Double Jump! --</b> The double jump is my favorite part of this. You get it and there's a huge "DOUBLE JUMP!" splash text. This is pretty much the culmination of all the previous principles, nothing entirely new here besides adding a check for if the player had already jumped twice.</li>
-            </ul>
-
-            <h2><a href="https://github.com/polynomial115/polynomial-client">Polynomial</a></h2>
-
-            <div class="center-container">
-                <img class="fancy" src="./assets/polynomial-1.png" width=25%>
-                <img class="fancy" src="./assets/polynomial-4.png" width=25%>
-            </div>
-            <div class="center-container">
-                <img class="fancy" src="./assets/polynomial-2.png" width=25%>
-                <img class="fancy" src="./assets/polynomial-3.png" width=25%>
-            </div>
-
-            <p>This is a project that I worked on during my sophomore year at university with a group of friends. The project concerned a task-management activity built within Discord itself using its Activity SDK (software development kit). It taught me first and foremost how to meaningfully work in a team development environment, and I had a lot of fun doing it!</p>
-
-            <p>The main purpose of the project was to construct a <a href="https://www.scrum.org/resources/what-scrum-module">Scrum</a>-focused task manager application. Since we had to use the Agile methodology for class, we decided to implement something that people can use within Discord itself. I thought that this project was a lot of fun!</p>
-
-            <p>The main skills I learned and used in this project were:</p>
-            <ul>
-                <li>Extensive use of and, as a result, familiarity with the Discord.js library</li>
-                <li>Lots of React usage, as well as sweetalert2's modal system for popups</li>
-                <li>Experience working with TypeScript for writing different pages across the application</li>
-            </ul>
-        </details>
-
-        <details class="dark-purple">
-            <summary><b>Unity!</b> This is my go-to game engine. I'm very good at using it and am always willing and ready to learn more about it.</summary>
-            <br>
-            For specifics on what I'm good at, I am primarily a programmer in C# and I occasionally dabble in Shader programming (HLSL) and creation using the built-in Shader Graph tool. You will find it in another section, but I do have a good grasp on how graphics rendering is handled in different engines. Generally speaking however, it is the same concept all around: render stuff in a 3-dimensional environment, hand off programming to the GPU, rasterize, and put it on your screen.
-            <br>
-            <p>Here is a list of my skills to get you acquainted:</p>
-            <ul>
-                <li>Fluency with Unity navigation and C#. If not, I learn very quickly. I am used to reading the Unity documentation, trust me. :)</li>
-                <li>Experience creating first-person and third-person game environments</li>
-                <li>Experience with creating UIs using Unity's build in TextMeshPro objects and Canvases to create menus.</li>
-                <li>Familiarity with different rendering methods and compression methods used by Unity's import settings and renderers</li>
-                <li>Familiarity with HLSL and Unity's shader graph capabilities</li>
-            </ul>
-            <h3>Silly Sphere</h3>
-            <div class="center-container">
-                <img class="fancy" src="./assets/sillysphere-1.png" width=30%>
-                <img class="fancy" src="./assets/sillysphere-2.png" width=30%>
-                <img class="fancy" src="./assets/sillysphere-3.png" width=30%>
-            </div>
-            No you are not seeing things. Those cubes in the right-hand image are actually Hornet from Hollow Knight: Silksong.<br><br>
-            My first foray into Unity was a class project that I dubbed <a href="https://hotairballooon.itch.io/silly-sphere">Silly Sphere</a>. This was a very simple marble rolling game. Think Super Monkey Ball. Either way, it taught me the basics like Components and writing scripts for Rigidbodies and collision handling. It taught me pretty much everything I needed to make a simple physics environment and control scheme. I also learned how to make menus and UI using Canvases!
-
-            <h3>Reflection of a Dream</h3>
-            <div class="center-container">
-                <img class="fancy" src="./assets/rofd-1.png" width=30%>
-                <img class="fancy" src="./assets/rofd-2.png" width=30%>
-                <img class="fancy" src="./assets/rofd-3.png" width=30%>
-            </div>
-            <p>Reflection of a Dream is a game that I made for the same class. This time, I had to collaborate with a team. Together we managed to create a world-swap platformer.</p>
-
-            <p>In essence, we have a "Dream" world and a "Nightmare" world. The two environments use the same geometry with changes in player hazards, platforms, and whatnot.</p>
-
-            <p>The thing I am most proud to show off is the <b>serialization algorithm</b> that I wrote for the game. Serialization is just a fancy word for "saving and loading". I had to learn how to save the current level, the current player position, and a ton of other options while keeping the functionality to save everything and load everything at will. The process essentially boiled down to saving necessary data to a JSON, serializing it, and encrypting the data. This data then had to be deserialized and decrypted in order to load it back into the game.</p>
-
-            Here I also learned:
-            <ul>
-                <li>how to create puzzle gameplay and seamless dimensional shifting</li>
-                <li>how to do audio management (music, SFX, volume control)</li>
-                <li>integration of mouse movement into gameplay</li>
-                <li>better environment lighting and reinforcement of level design principles to guide the player instead of confuse them (showing just the right amount of information)</li>
-            </ul>
-
-            <h3>Infinity Ball</h3>
-            <div class="center-container">
-                <img class="fancy" src="./assets/infinity-ball.png" width=40%>
-            </div>
-
-            <p>Infinity Ball was my pride and joy when it comes to solo development in Unity. It's essentially "What if <a href="https://store.steampowered.com/app/2379780/Balatro/">Balatro</a> but 8-ball." It's an 8-ball roguelike. This project served mostly as a conduit for me to learn other skills past what I learned during the creation of Silly Sphere and Reflection of a Dream. Also, I know it's hard to tell, but the background is actually an animated <a href="https://en.wikipedia.org/wiki/Julia_set">Julia set</a> fractal. It took me an entire day to learn how to make in HLSL, but it looks really cool so I can't get rid of it.</p>
-
-            <p>This project taught me about balancing upgrade systems. It also was my first experience showing off a project to my friends for playtesting. For Reflections of a Dream, one of my other team members handled playtesting + feedback, so I didn't really know how the process worked back then.</p>
-
-            <p>Other things I learned while working on Infinity-Ball:</p>
-            <ul>
-                <li>working within a 2D game environment and rendering pipeline</li>
-                <li>how to texture spheres and have them spin when hit (this was actually not that hard to do but I got it working with a very complex method)</li>
-                <li>Unity's animation system</li>
-                <li>how to use coroutines responsibly</li>
-                <li>good C# code organization and practices (this was something that I hadn't properly learned how to do until I made this game, frankly)</li>
-            </ul>
-
-            <h2>VENDetta</h2>
-
-            <div class="center-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0um2AtN2G7Q?si=oO1KmIjzvGf0Vm0X" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <p><a href="https://hotairballooon.itch.io/vendetta">VENDetta</a> is my (current) magnum opus in Unity. Naturally, you would think I've had enough after going "What about 8-Ball Balatro?" Then I went ahead and extended the concept to vending machines. The result is something as beautiful as cookies & cream ice cream on a ninety degree day. This game is something that, by all accounts, should not exist, yet it does anyway. Which is pretty in line with my philosophy for making stuff in general. If you've got an idea, feel free to try it out!</p>
-
-            <p>Above all else, VENDetta taught me how to produce something that can meaningfully be called a "game" in a limited amount of time. Actually, a VERY limited amount of time (1 week!) This was for the 7-Day Roguelike Game Jam hosted by itch.io themselves. Ideation, designing, coding, artwork, and everything had to be completed in seven days, or it didn't count. Let's just say that the 7-Eleven cashiers near my house saw me often that week, buying Monster Energy (specifically Ultra Blue Hawaiian) and 5-Hour Energy.</p>
-
-            <p>I joined the game jam to really push myself. Often I get very stuck when working on things and stop way before it's even near halfway done. VENDetta is an exception, and the deadline really did push me to work as hard as I did on this.</p>
-
-            <p>By this point, I had attained near fluency of the Unity game engine. But I still learned new things making VENDetta:</p>
-            <ul>
-                <li>how to make a unique AND replayable gameplay loop without it being repetitive</li>
-                <li>even better code and asset organization</li>
-                <li>how to truly handle randomness in game design (seeding, random item generation, meaningfully different game modifiers)</li>
-                <li>pacing between levels and difficulty pacing</li>
-                <li>delivery and reception of feedback (since this was a solo venture, I got even better feedback. and from strangers this time!)</li>
-            </ul>
-
-            <p>Did I win the game jam? No. Of course I didn't! Everybody's so talented! But I had a wonderful time making this game, and I'd totally be happy to make another.</p>
-
-        </details>
-
-        <details class="dark-blue">
-            <summary><b>Blender!</b> My go-to modeling software! I know how to texture and model in Blender, and am familiar with the Python API.</summary>
-            
-            I've been into modeling and texturing lately, largely spurred on by my involvement in the <i>ULTRAKILL</i> modding community.<br><br>
-                
-            Through creating my level, I have learned how to use Blender's basic and advanced modeling tools. I even know some fancy keyboard shortcuts. I also boast the ability to use the texture painting functionality (though I opt not to and texture in <a href="https://krita.org/en/">Krita</a> or <a href="https://libresprite.github.io/">LibreSprite</a> if I have the option.)<br><br>
-            I'm also familiar with the animation tools, lighting tools, and rendering engine. I wouldn't consider myself fluent with <a href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html">Geometry nodes</a>, but I've made my fair share of node graphs to ease rendering, modifying and baking textures for meshes.
-            <br><br>
-            There is also the matter of the Blender Python API. I have only dabbled with this once but my goodness was it fun. I had to use a tool provided by a <a href="https://github.com/bobot-dev">very talented and kind community member</a> to create edge loops in intervals of 5 units to correctly scale textures and UVs for my ULTRAKILL custom level. I discovered that a particular function I needed was not implemented so I decided to contribute to the Blender add-on for myself.
-            <br><br>
-            Ignoring the fact that I worked on this during class, I found myself being very proactive during the time period where I was figuring out how to use Blender's API. In the end I managed to successfully create my desired function: a toggle to only correct the UVs and perform edge cuts ONLY on selected faces. 
-            <br><br>
-            Since the code is not on a public GitHub repository and the dev wishes to not have it shared publicly, I can't share any screenshots of the code. However I do want to show a GIF showing the result of what I wrote just so you know I'm not lying.
-            <br><br>
-            <img src="./assets/setup_example.gif" width=60%>
-            <br><br>
-
-            As for examples of what I've actually made in Blender, I want to show you those too. Here are some of my most recent creations:<br><br>
-            <figure>
-                <img src="./assets/metaldetector.png" width=20%>
-                <figcaption>Metal detector! Textured and modeled by me.</figcaption>
-            </figure>
-            <br><br>
-            <figure>
-                <img src="./assets/baggageclaim.png" width=20%>
-                <figcaption>Baggage claim conveyor! Textured and modeled by me.</figcaption>
-            </figure>
-            <br><br>
-            <figure>
-                <img src="./assets/twistingroom.png" width=20%>
-                <figcaption>One of my twisting rooms for the aforementioned custom level. Textures from ULTRAKILL's base game and modeling by me.</figcaption>
-            </figure>
-        </details>
-
-    </details>
-
-    <h2>Why does this website look like this?</h2>
-    <p>
-        I always preferred the look of old early 2000s websites. It's what I grew up with, and I feel like it's a lost art that's going away the further we get. It's probably idiotic to stick to something traditional like this when there's so much more to be learned with new technological advancements in rendering, website design, UI design, and whatnot. But I feel like there's something good about a website where you just have to scroll and read to find out all the information I have to present. Also there's just something really charming about working on something that many would be consider to be ugly. It's kind of like my beloved ugly little creature. My mad scientist concoction.
-        <br><br>Just one simple website! That's all I really need to show you what I'm about.
-    </p>
-    <!-- contact info  -->
-    <h2>
-        <img class="flanking-image" src="./assets/phone.gif">
-        Socials // Contact me!
-        <img class="flanking-image" src="./assets/phone.gif">
-    </h2>
-
-    <img class="center-image" src="./assets/letter.gif">
-
-    <table>
-        <tr>
-            <th>E-mail</th>
-            <th><button id="emailButton">---==<  Click to copy!  >==---</button></th>
-        </tr>
-        <tr>
-            <th>GitHub</th>
-            <th><a href="https://github.com/hab927">https://github.com/hab927</a></th>
-        </tr>
-        <tr>
-            <th>Itch.io</th>
-            <th><a href="https://hotairballooon.itch.io/">https://hotairballooon.itch.io/</a></th>
-        </tr>
-        <tr>
-            <th>YouTube</th>
-            <th><a href="https://www.youtube.com/@habibble">https://www.youtube.com/@habibble</a></th>
-        </tr>
-        <tr>
-            <th>BlueSky</th>
-            <th><a href="https://bsky.app/profile/habb.bsky.social">https://bsky.app/profile/habb.bsky.social</a> (I don't use this a lot!...no posts yet)</th>
-        </tr>
-    </table>
     <div class="footer">
         <h2>Credits // Citations // What Have You</h2>
         <p><i>NO generative AI was used to create, edit, or maintain this website.</i></p>

@@ -165,10 +165,12 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   background-image: url("../assets/dell_10.jpg");
   background-position-x: center;
   flex: 100% 100% 0;
-  width: 18%;
+  width: 24%;
   max-width: 200px;
   margin: 10px;
+  margin-right: -1.5%;
   border: 4px solid black;
+  border-right: #0000;
   justify-content: space-between;
 }
 

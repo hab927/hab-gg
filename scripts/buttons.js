@@ -29,7 +29,7 @@ dyslexicFontButton.addEventListener('click', function() {
 });
 
 let MMactive = false;
-const mobileMediaQuery = window.matchMedia('(width < 50rem)');
+const mobileMediaQuery = window.matchMedia('(width < 40rem)');
 
 mobileInfoButton.addEventListener('click', () => {
     if (!MMactive) {

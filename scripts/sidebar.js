@@ -17,10 +17,10 @@ sidebar.addEventListener('dblclick', function() {
 
 function showSidebar() {
     sidebarText.style.visibility = 'visible';
-    sidebar.style.width = "24%";
+    sidebar.style.width = "14%";
 }
 
 function hideSidebar() {
     sidebarText.style.visibility = 'hidden';
-    sidebar.style.width = "3%";
+    sidebar.style.width = "4%";
 }

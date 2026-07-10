@@ -161,11 +161,17 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   flex: 1;
 }
 
+@media screen and (width < 50rem) {
+  #sidebar-container {
+    display: none;
+  }
+}
+
 #sidebar-container {
   background-image: url("../assets/dell_10.jpg");
   background-position-x: center;
   flex: 100% 100% 0;
-  width: 24%;
+  width: 14%;
   max-width: 200px;
   margin: 10px;
   margin-right: -1.5%;
@@ -179,10 +185,11 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   font-weight: bold;
   color: greenyellow;
   margin: auto;
+
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  padding: 4px;
+  padding-right: 10%;
   text-align: center;
 }
 
@@ -249,6 +256,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
     text-align: center;
     z-index: 1;
     position: absolute;
+    position: clamp(90dvh, 90dvh);
 }
 
 .warning {
@@ -261,6 +269,8 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 .bg-image {
   /* background-image: linear-gradient(to bottom, powderblue, thistle); */
   background-image: url("../assets/windows_vista_beta_76.jpg");
-  background-size: 100% 100%;
+  min-height: 100dvh;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: repeat;
 }

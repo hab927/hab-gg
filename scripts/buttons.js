@@ -1,6 +1,8 @@
 let emailButton = document.getElementById("emailButton");
 let defaultFontButton = document.getElementById("defaultFontButton");
 let dyslexicFontButton = document.getElementById("dyslexicFontButton");
+let mobileInfoButton = document.querySelector("#mobile-info-button");
+let mobileMenu = document.querySelector("#mobile-menu-container");
 let tooltip = document.getElementById("copiedTT");
 
 emailButton.addEventListener('click', function() {
@@ -24,4 +26,35 @@ defaultFontButton.addEventListener('click', function() {
 
 dyslexicFontButton.addEventListener('click', function() {
     document.documentElement.classList.add("font-alt");
+});
+
+let MMactive = false;
+const mobileMediaQuery = window.matchMedia('(width < 50rem)');
+
+mobileInfoButton.addEventListener('click', () => {
+    if (!MMactive) {
+        mobileMenu.style.display = "block";
+        mobileInfoButton.textContent = "close";
+        mobileInfoButton.style.backgroundColor = "red";
+        MMactive = true;
+    }
+    else {
+        mobileMenu.style.display = "none";
+        mobileInfoButton.textContent = "menu";
+        mobileInfoButton.style.backgroundColor = "blue";
+        MMactive = false;
+    }
+});
+
+mobileMediaQuery.addEventListener('change', (e) => {
+    if (!e.matches) {    // desktop
+        mobileMenu.style.display = "none";
+    }
+    // uncomment if people like having the mobile menu stay open
+
+    // else {
+    //     if (MMactive) {
+    //         mobileMenu.style.display = 'block';
+    //     }
+    // }
 });

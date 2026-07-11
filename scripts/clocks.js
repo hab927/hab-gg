@@ -1,5 +1,3 @@
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
 let elements = document.getElementsByClassName("flashing");
 let time = 250;
 let color1 = "cyan";

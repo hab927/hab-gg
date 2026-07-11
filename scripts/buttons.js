@@ -3,6 +3,7 @@ let defaultFontButton = document.getElementById("defaultFontButton");
 let dyslexicFontButton = document.getElementById("dyslexicFontButton");
 let mobileInfoButton = document.querySelector("#mobile-info-button");
 let mobileMenu = document.querySelector("#mobile-menu-container");
+let testButton = document.querySelector("#test-button");
 let tooltip = document.getElementById("copiedTT");
 
 emailButton.addEventListener('click', function() {
@@ -26,6 +27,11 @@ defaultFontButton.addEventListener('click', function() {
 
 dyslexicFontButton.addEventListener('click', function() {
     document.documentElement.classList.add("font-alt");
+});
+
+testButton.addEventListener('click', async function() {
+    await lerp(20);
+    console.log("alsdjk");
 });
 
 let MMactive = false;

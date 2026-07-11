@@ -215,7 +215,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   filter: blur(var(--blur));
 
   border: 4px dashed black;
-  z-index: -1;
+  z-index: 1;
 }
 
 #mobile-menu-container {
@@ -228,6 +228,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   left: 0;
   width: calc(100% - (var(--m) - var(--bw)) * 2);
   height: calc(100% - (var(--m) - var(--bw)) * 2);
+  z-index: 1;
 }
 
 #mobile-menu {
@@ -236,7 +237,8 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   padding-right: 1rem;
   padding-left: 0.7rem;
   color: greenyellow;
-  z-index: 2;
+  z-index: 1;
+  align-items: stretch;
 }
 #mobile-menu a {
   font-weight: bold;
@@ -251,6 +253,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   display: flex;
   flex-direction: row;
   height: auto;
+  z-index: inherit;
 }
 .mm-column {
   margin: 0.1rem;
@@ -268,6 +271,12 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   #mobile-info-button {
     display: block;
   }
+  .rd-target {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (pointer: none) {
   #mouse-trail-toggle {
     display: none;
   }
@@ -373,11 +382,27 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
     font-weight: bold;
 }
 
-.bg-image {
+.bg-image-light {
   /* background-image: linear-gradient(to bottom, powderblue, thistle); */
   background-image: url("../assets/windows_vista_beta_76.jpg");
   min-height: 100dvh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
+}
+
+.bg-image-dark {
+  /* background-image: linear-gradient(to bottom, powderblue, thistle); */
+  background-image: url("../assets/perfect_hue_102.jpg");
+  min-height: 100dvh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: white;
+}
+.bg-image-dark a {
+  color: lightblue;
+}
+.bg-image-dark a:visited {
+  color: palevioletred;
 }

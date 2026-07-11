@@ -21,6 +21,7 @@ async function spawnParticle(textColor) {
     div.style.position = 'fixed';
     div.style.left = mousePosition.x + spawnOffset.x + 'px';
     div.style.top = mousePosition.y + spawnOffset.y + 'px';
+    div.style.zIndex = 100;
 
     let lifespan = 0; // 0 is just made. 1 is expired
     let fallDirection = Math.random() - 0.5;

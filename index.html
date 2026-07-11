@@ -13,7 +13,7 @@
     <title>Hab's Webpage</title>
     <base target="_blank">
 </head>
-<body class="bg-image">
+<body>
 
     <div id="trail"></div>
 
@@ -75,15 +75,28 @@
 
     <div class="center-container" style="flex-direction: column; background-image: url('../assets/dell_40.jpg'); padding-top: 0px; padding-bottom: 1.5rem; color: white; border: 2px solid grey;">
         <div style="display: flex; flex-direction: row !important;">
-            <img class="flanking-image" src="./assets/gears.gif" width="50rem" height="30rem" style="translate: 0 1rem">
+            <img class="flanking-image" src="./assets/gears.gif" width="50rem" height="30rem" style="translate: 0 1rem;">
             <h2>site settings</h2>
             <img class="flanking-image" src="./assets/gears.gif" width="50rem" height="30rem" style="translate: -10px 1rem">
         </div>
         
-        <button id="mouse-trail-toggle" style="margin-top: 0.5rem;">Mouse Trail (<span id="MTTtext">ON</span>)</button>
-        <div style="margin: 0.5rem;">
-            <button id="defaultFontButton">Default Font</button>
-            <button id="dyslexicFontButton" style="font-family: 'ComicSans'">Dyslexia-Friendly Font</button>
+        <div class="rd-target" style="display: flex; justify-content: center;">
+            <div class="center-container" style="flex-direction: column;">
+                <button id="mouse-trail-toggle" style="margin-top: 0.5rem;">Mouse Trail (<span id="MTTtext">ON</span>)</button>
+                <div style="margin: 0.5rem;">
+                    <button id="defaultFontButton">Default Font</button>
+                    <button id="dyslexicFontButton" style="font-family: 'ComicSans'">Dyslexia-Friendly Font</button>
+                </div>
+            </div>
+            <div style="padding-left: 2rem;">
+                <div style="padding-top: 1.3rem;">
+                    <b>Choose a wallpaper:</b>
+                </div>
+                <div>
+                    <img id="light-bg" src="./assets/windows_vista_beta_76.jpg" style="width: 6rem; box-sizing: border-box;">
+                    <img id="dark-bg" src="./assets/perfect_hue_102.jpg" style="width: 6.25rem; box-sizing: border-box;">
+                </div>
+            </div>
         </div>
     </div>
 

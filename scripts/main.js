@@ -15,3 +15,6 @@ const lerp = async function* (ms) {
         yield (i/ms);
     }
 }
+
+let body = document.querySelector("body");
+body.classList.add('bg-image-light');

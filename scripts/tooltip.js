@@ -1,5 +1,7 @@
 let tooltips = document.getElementsByClassName("tooltip");
 
+document.addEventListener('mousemove', mouseHover, true);
+
 function mouseHover(e) {
     for (var i=tooltips.length; i--;) {
         if (tooltips[i].style.visibility == 'visible') {

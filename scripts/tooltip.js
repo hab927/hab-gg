@@ -1,4 +1,5 @@
 let tooltips = document.getElementsByClassName("tooltip");
+let tooltip = document.getElementById("copiedTT");
 
 document.addEventListener('mousemove', mouseHover, true);
 

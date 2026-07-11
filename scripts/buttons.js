@@ -2,9 +2,13 @@ let emailButton = document.getElementById("emailButton");
 let defaultFontButton = document.getElementById("defaultFontButton");
 let dyslexicFontButton = document.getElementById("dyslexicFontButton");
 let mobileInfoButton = document.querySelector("#mobile-info-button");
+
+// let testButton = document.querySelector("#test-button");
+let trailToggle = document.querySelector("#mouse-trail-toggle");
+
 let mobileMenu = document.querySelector("#mobile-menu-container");
-let testButton = document.querySelector("#test-button");
-let tooltip = document.getElementById("copiedTT");
+let trailText = document.querySelector("#MTTtext");
+let trailOn = true;
 
 emailButton.addEventListener('click', function() {
     // i will not let anybody scrape my data
@@ -13,7 +17,7 @@ emailButton.addEventListener('click', function() {
     for (let i = 0; i < encryption.length; i++) {
         decryption += String.fromCharCode(encryption.charCodeAt(i) ^ 0b010101);
     }
-    console.log(decryption);
+    // console.log(decryption);
     navigator.clipboard.writeText(decryption);
 
     // tooltip appearance & disappearance
@@ -29,9 +33,21 @@ dyslexicFontButton.addEventListener('click', function() {
     document.documentElement.classList.add("font-alt");
 });
 
-testButton.addEventListener('click', async function() {
-    await lerp(20);
-    console.log("alsdjk");
+// testButton.addEventListener('click', async function() {
+//     await lerp(20);
+//     console.log("alsdjk");
+// });
+
+trailToggle.addEventListener('click', () => {
+    if (trailOn) {
+        trailText.textContent = "OFF";
+        trailOn = false;
+    }
+    else {
+        trailText.textContent = "ON";
+        trailOn = true;
+        mouseTrail();
+    }
 });
 
 let MMactive = false;

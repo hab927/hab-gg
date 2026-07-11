@@ -1,8 +1,7 @@
 async function mouseTrail() {
     await delay(50);
-    if (checkMouse.matches) {
+    if (checkMouse.matches && trailOn) {
         let color = rainbowMode(10.001);
-        console.log(color);
         spawnParticle(color);
         mouseTrail();
     }
@@ -25,7 +24,8 @@ async function spawnParticle(textColor) {
 
     let lifespan = 0; // 0 is just made. 1 is expired
     let fallDirection = Math.random() - 0.5;
-    let scale = Math.random + 1.0;
+    let scale = Math.random() * 100 + 50;
+    let rotation = Math.random() * 360;
 
     const whateverAnimation = async () => {
         let verticalDisplacement = 0;
@@ -40,7 +40,8 @@ async function spawnParticle(textColor) {
             div.style.top = (originMousePosition.y + spawnOffset.y + verticalDisplacement) +'px';
             div.style.left = (originMousePosition.x + spawnOffset.x +  50 * fallDirection * lifespan) + 'px';
             div.style.opacity = 1 - lifespan;
-            div.style.scale = 1 - lifespan;
+            div.style.scale = (1 - lifespan) * scale + '%';
+            div.style.rotate = 1 - lifespan * rotation + 'deg';
         }
         div.remove();
     }

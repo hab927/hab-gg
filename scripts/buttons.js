@@ -51,7 +51,6 @@ trailToggle.addEventListener('click', () => {
 });
 
 let MMactive = false;
-const mobileMediaQuery = window.matchMedia('(width < 40rem)');
 
 mobileInfoButton.addEventListener('click', () => {
     if (!MMactive) {
@@ -66,17 +65,4 @@ mobileInfoButton.addEventListener('click', () => {
         mobileInfoButton.style.backgroundColor = "blue";
         MMactive = false;
     }
-});
-
-mobileMediaQuery.addEventListener('change', (e) => {
-    if (!e.matches) {    // desktop
-        mobileMenu.style.display = "none";
-    }
-    // uncomment if people like having the mobile menu stay open
-
-    // else {
-    //     if (MMactive) {
-    //         mobileMenu.style.display = 'block';
-    //     }
-    // }
 });

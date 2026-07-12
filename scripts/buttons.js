@@ -8,10 +8,7 @@ let darkBG = document.querySelector("#wp-dark");
 
 // let testButton = document.querySelector("#test-button");
 let trailToggle = document.querySelector("#mouse-trail-toggle");
-
 let mobileMenu = document.querySelector("#mobile-menu-container");
-let trailText = document.querySelector("#MTTtext");
-let trailOn = true;
 
 emailButton.addEventListener('click', function() {
     // i will not let anybody scrape my data
@@ -29,10 +26,12 @@ emailButton.addEventListener('click', function() {
 });
 
 defaultFontButton.addEventListener('click', function() {
+    savePref('font', 'default');
     document.documentElement.classList.remove("font-alt");
 });
 
 dyslexicFontButton.addEventListener('click', function() {
+    savePref('font', 'df')
     document.documentElement.classList.add("font-alt");
 });
 
@@ -44,10 +43,12 @@ dyslexicFontButton.addEventListener('click', function() {
 trailToggle.addEventListener('click', () => {
     if (trailOn) {
         trailText.textContent = "OFF";
+        savePref('trail', false);
         trailOn = false;
     }
     else {
         trailText.textContent = "ON";
+        savePref('trail', true);
         trailOn = true;
         mouseTrail();
     }

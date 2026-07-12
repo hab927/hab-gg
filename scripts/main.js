@@ -16,12 +16,21 @@ const lerp = async function* (ms) {
     }
 }
 
+// helepr functions to make saving/loading preferences from LocalStorage less painful
+function savePref(prefKey, prefValue) {
+    window.localStorage.setItem(prefKey, JSON.stringify(prefValue));
+}
+function loadPref(prefKey, prefValue) {
+    return JSON.parse(window.localStorage.getItem(prefKey));
+}
+
 let body = document.querySelector("body");
 let wallpaperButtons = document.getElementsByClassName("wp-button");
+let trailText = document.querySelector("#MTTtext");
 body.classList.add('bg-light');
 
 function changeBG(wallpaperName) {
-    window.localStorage.setItem("wallpaper", wallpaperName);
+    savePref("wallpaper", wallpaperName);
     for (const wb of wallpaperButtons) {
         wb.style.border = 'none';
     }
@@ -32,13 +41,43 @@ function changeBG(wallpaperName) {
 }
 
 function loadPrefs() {
-    let wallpaperPref = window.localStorage.getItem('wallpaper');
-    console.log(wallpaperPref);
-    if (!wallpaperPref) {
+    // wallpaper
+    let wallpaperPref = loadPref('wallpaper');
+    if (wallpaperPref == null) {
         changeBG('light');
     }
     else {
         changeBG(wallpaperPref);
+    }
+
+    // mouse trail
+    let trailPref = loadPref('trail');
+    if (trailPref == null) {
+        trailOn = true;
+        trailText = "ON";
+    }
+    else {
+        trailOn = trailPref;
+        if (trailOn) {
+            trailText.textContent = "ON";
+        }
+        else {
+            trailText.textContent = "OFF";
+        }
+    }
+
+    // fonts
+    let fontPref = loadPref('font');
+    if (fontPref == null) {
+        document.documentElement.classList.remove('font-alt');
+    }
+    else {
+        if (fontPref == 'default') {
+            document.documentElement.classList.remove('font-alt');
+        }
+        else {
+            document.documentElement.classList.add('font-alt');
+        }
     }
 }
 

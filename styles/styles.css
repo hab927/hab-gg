@@ -382,7 +382,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
     font-weight: bold;
 }
 
-.bg-image-light {
+.bg-light {
   /* background-image: linear-gradient(to bottom, powderblue, thistle); */
   background-image: url("../assets/windows_vista_beta_76.jpg");
   min-height: 100dvh;
@@ -391,7 +391,7 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   background-repeat: repeat;
 }
 
-.bg-image-dark {
+.bg-dark {
   /* background-image: linear-gradient(to bottom, powderblue, thistle); */
   background-image: url("../assets/perfect_hue_102.jpg");
   min-height: 100dvh;
@@ -400,9 +400,9 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   background-repeat: repeat;
   color: white;
 }
-.bg-image-dark a {
+.bg-dark a {
   color: lightblue;
 }
-.bg-image-dark a:visited {
+.bg-dark a:visited {
   color: palevioletred;
 }

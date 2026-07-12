@@ -3,8 +3,8 @@ let defaultFontButton = document.getElementById("defaultFontButton");
 let dyslexicFontButton = document.getElementById("dyslexicFontButton");
 let mobileInfoButton = document.querySelector("#mobile-info-button");
 
-let lightBG = document.querySelector("#light-bg");
-let darkBG = document.querySelector("#dark-bg");
+let lightBG = document.querySelector("#wp-light");
+let darkBG = document.querySelector("#wp-dark");
 
 // let testButton = document.querySelector("#test-button");
 let trailToggle = document.querySelector("#mouse-trail-toggle");
@@ -70,16 +70,5 @@ mobileInfoButton.addEventListener('click', () => {
     }
 });
 
-lightBG.addEventListener('click', () => {
-    darkBG.style.border = 'none';
-    lightBG.style.border = "2px solid white";
-    body.classList.remove('bg-image-dark');
-    body.classList.add('bg-image-light');
-});
-
-darkBG.addEventListener('click', () => {
-    darkBG.style.border = "2px solid white";
-    lightBG.style.border = 'none';
-    body.classList.remove('bg-image-light');
-    body.classList.add('bg-image-dark');
-});
+lightBG.addEventListener('click', () => { changeBG('light') });
+darkBG.addEventListener('click', () => { changeBG('dark') });

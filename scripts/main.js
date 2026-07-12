@@ -17,4 +17,29 @@ const lerp = async function* (ms) {
 }
 
 let body = document.querySelector("body");
-body.classList.add('bg-image-light');
+let wallpaperButtons = document.getElementsByClassName("wp-button");
+body.classList.add('bg-light');
+
+function changeBG(wallpaperName) {
+    window.localStorage.setItem("wallpaper", wallpaperName);
+    for (const wb of wallpaperButtons) {
+        wb.style.border = 'none';
+    }
+    let div = document.getElementById('wp-' + wallpaperName);
+    div.style.border = "2px solid white";
+    body.className = '';
+    body.classList.add('bg-' + wallpaperName);
+}
+
+function loadPrefs() {
+    let wallpaperPref = window.localStorage.getItem('wallpaper');
+    console.log(wallpaperPref);
+    if (!wallpaperPref) {
+        changeBG('light');
+    }
+    else {
+        changeBG(wallpaperPref);
+    }
+}
+
+loadPrefs();

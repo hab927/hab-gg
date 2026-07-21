@@ -8,6 +8,9 @@ mobileMediaQuery.addEventListener('change', (e) => {
         for (let i = 0; i < pressTypeSpans.length; i++) {
             pressTypeSpans[i].textContent = "CLICK";
         }
+        skillsWidth = 12;
+        stopAnimations();
+        runAnimations();
     }
 
     else {              // mobile
@@ -19,5 +22,8 @@ mobileMediaQuery.addEventListener('change', (e) => {
         for (let i = 0; i < pressTypeSpans.length; i++) {
             pressTypeSpans[i].textContent = "TAP";
         }
+        skillsWidth = 5;
+        stopAnimations();
+        runAnimations();
     }
 });

@@ -73,6 +73,8 @@ function rgbToHex(r, g, b) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
+// end citation
+
 function rainbowMode(hue_step) {
   hue = (hue + hue_step) % 360; // update hue
 

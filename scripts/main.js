@@ -81,4 +81,64 @@ function loadPrefs() {
     }
 }
 
+const skillsMap = new Map([
+  ['blender', 'Blender'],
+  ['web-dev', 'HTML/CSS/JS'],
+  ['unity', 'Unity'],
+  ['python', 'Python'],
+  ['c', 'C'],
+  ['cpp', 'C++'],
+  ['csharp', 'C#'],
+  ['ubuntu', 'Ubuntu'],
+  ['hlsl', 'HLSL'],
+  ['git', 'Git'],
+  ['github', 'GitHub'],
+  ['fmod', 'FMOD'],
+  ['opengl', 'OpenGL'],
+  ['webgl', 'WebGL'],
+  ['nodejs', 'Node.js'],
+  ['react', 'React'],
+  ['typescript', 'TypeScript']
+]);
+
+const logos = [...skillsMap.keys()];
+const captions = [...skillsMap.values()];
+
+async function loadLogos() {
+    for (let i = 0; i < logos.length; i++) {
+        logo = logos[i];
+        let div = document.createElement('div');
+        div.classList.add('logo-bubble');
+        div.id = logo + '-bubble';
+
+        // logo
+        const img = document.createElement('img');
+        img.classList.add('logo');
+        img.src = '../assets/logos/' + logo + '.png';
+        img.alt = logo + ' logo';
+
+        //wrapper for animation
+        const tdw = document.createElement('div');
+        tdw.classList.add('depth-wrapper');
+
+        //bubble
+        const bubble = document.createElement('img');
+        bubble.classList.add('bubble');
+        bubble.src = '../assets/bubble.png';
+
+        //caption
+        const caption = document.createElement('div');
+        caption.textContent = captions[i];
+        caption.classList.add('bubble-caption');
+
+        tdw.appendChild(img);
+        tdw.appendChild(bubble);
+        tdw.appendChild(caption);
+        div.appendChild(tdw);
+        let container = document.getElementById('spinning-logos');
+        container.appendChild(div);
+    }
+}
+
 loadPrefs();
+loadLogos();

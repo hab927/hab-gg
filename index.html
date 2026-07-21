@@ -68,9 +68,9 @@
         Hello! welcome to my web page.
         <img class="flanking-image" src="./assets/star6.gif">
         <hr>
-        <!-- <div>
-            <button id="test-button" style="font-size: 40px; padding: 25px;">TEST BUTTON</button>
-        </div> -->
+        <div>
+            <!-- <button id="test-button" style="font-size: 40px; padding: 25px;">TEST BUTTON</button> -->
+        </div>
     </h1>
 
     <div class="center-container" style="flex-direction: column; background-image: url('../assets/dell_40.jpg'); padding-top: 0px; padding-bottom: 1.5rem; color: white; border: 2px solid grey;">
@@ -127,12 +127,15 @@
                 I'm theming it around an airport design. I'm taking inspiration from the new Fraud layer, which uses non-Euclidean geometry, camera and gravity trickery to make you think you're working with an impossible space. It's really cool! I implore you to check out the base game if you can.
             </p>        
     
-            <h2>HELLO! If you are a recruiter, and you're seeing this, click the dropdown.</h2>
-            <h3>(Or if for some reason you want to see what I'm good at and like showing off!)</h3>
+            <h2>
+                <p>HELLO! This is a section showing my skills.</p>
+            </h2>
+
+            <h3>There are also dropdowns if you want to learn more about specific ones!</h3>
     
-            <details class="dark-green">
+            <details class="dark-green" open="true">
                 <summary><b style="color: cyan">
-                    <span class="flashing"><span class="press-type">CLICK</span> THIS AWESOME DROPDOWN TO SEE MY SKILLS & PROJECTS!!</span>
+                    <span class="flashing">If you're a recruiter, I implore you to please take a look here!</span>
                 </b></summary>
                 <p>Hi. I made this because it would probably be more convenient to include a section showing off what I'm good at for jobs. If you are seeing this, you probably saw my resume (and CV if you requested it) already. So I won't be rehashing it here.</p>
     
@@ -143,6 +146,16 @@
                     <img class="flanking-image" src="./assets/lightbulb.gif" style="margin-right: 10%;">
                     <img class="flanking-image" src="./assets/hammer-anvil.gif">
                 </div>
+
+                <div class="center-container">
+                    <p>Well, here they are. My skills.</p>
+                </div>
+
+                <div class="center-container">
+                    <div id="spinning-logos"></div>
+                </div>
+
+                <p>I've expanded on some of them below. There are some that I'm especially proud of, so be sure to check them out!</p>
     
                 <details class="dark-red">
                     <summary><b>JavaScript!</b> Fair share of class projects and personal projects here. Though I'm going to share my proudest ones.</summary>
@@ -367,7 +380,7 @@
     
             <table>
                 <tr>
-                    <th>E-mail</th>
+                    <th><img class="flanking-image" src="./assets/mailme.gif" width="100rem"></th>
                     <th>
                         <button id="emailButton">
                             ---==<  Click to copy!  >==---
@@ -432,5 +445,6 @@
 <script src="./scripts/tooltip.js"></script>
 <script src="./scripts/sidebar.js"></script>
 <script src="./scripts/trail.js"></script>
+<script src="./scripts/animations.js"></script>
 <script src="./scripts/responsivedesign.js"></script>
 </html>

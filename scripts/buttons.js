@@ -36,8 +36,7 @@ dyslexicFontButton.addEventListener('click', function() {
 });
 
 // testButton.addEventListener('click', async function() {
-//     await lerp(20);
-//     console.log("alsdjk");
+//     loadLogos();
 // });
 
 trailToggle.addEventListener('click', () => {

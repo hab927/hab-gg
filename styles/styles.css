@@ -46,6 +46,8 @@ details {
 
 details.dark-green {
   background-image: url("../assets/windows_vista_beta_74.jpg");
+  background-color: darkolivegreen;
+  background-blend-mode: multiply;
 }
 details.dark-green a {
   color:cyan;
@@ -70,6 +72,8 @@ details.dark-green a:visited {
 details.dark-purple {
   border: 2px solid purple;
   background-image: url("../assets/windows_vista_beta_107.jpg");
+  background-color: purple;
+  background-blend-mode: multiply;
 }
 details.dark-purple a {
   color:greenyellow;
@@ -123,43 +127,6 @@ table, th, tr {
 th, tr {
     padding: 4px;
 }
-
-/*
-Source - https://stackoverflow.com/a/67968068
-Posted by brc-dd, modified by community. See post 'Timeline' for change history
-Retrieved 2026-05-19, License - CC BY-SA 4.0
-*/
-
-.wrapper {
-  max-width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  border: 2px solid black;
-  background-color: black;
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  color: white;
-  animation: marquee 60s linear infinite;
-}
-
-.marquee p {
-  display: inline-block;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-/* end citation */
 
 /* IDs */
 #main-content {
@@ -262,18 +229,6 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
   background-color: #000000aa;
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (width < 40rem) {
-  #sidebar-container {
-    display: none;
-  }
-  #mobile-info-button {
-    display: block;
-  }
-  .rd-target {
-    flex-direction: column !important;
-  }
 }
 
 @media screen and (pointer: none) {
@@ -405,4 +360,129 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 }
 .bg-dark a:visited {
   color: palevioletred;
+}
+
+@media screen and (width < 40rem) {
+  #sidebar-container, #mouse-trail-toggle {
+    display: none;
+  }
+  #mobile-info-button {
+    display: block;
+  }
+  .rd-target {
+    flex-direction: column !important;
+  }
+}
+
+/*
+Source - https://stackoverflow.com/a/67968068
+Posted by brc-dd, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-19, License - CC BY-SA 4.0
+*/
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* end citation */
+
+/* spinning logos in the skills section */
+
+#spinning-logos {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: relative;
+  padding: 4rem;
+}
+
+.bubble {
+  opacity: 0.8;
+}
+
+.bubble-caption {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS';
+  width: 4rem;
+  position: absolute;
+  top: 4rem;
+  left: 0.22rem;
+  text-align: center;
+}
+
+.logo-bubble {
+  scale: 110%;
+  left: 2rem;
+  top: -4rem;
+  position: absolute;
+}
+
+.logo-bubble .logo {
+  width: 2.25rem;
+  left: 0.75rem;
+  top: 0.7rem;
+  position: absolute;
+}
+
+.logo-bubble .bubble {
+  width: 3.75rem;
+  position: absolute;
+}
+
+#typescript-bubble .logo {
+  scale: 80%;
+}
+
+#webgl-bubble .logo {
+  top: 1.4rem;
+}
+
+#fmod-bubble .logo {
+  scale: 80%;
+}
+
+#hlsl-bubble .logo {
+  top: 0.9rem;
+}
+
+#cpp-bubble .logo {
+  scale:90%;
+  top: 0.6rem;
+}
+
+#blender-bubble .logo {
+  top: 0.8rem;
+}
+
+#web-dev-bubble .logo {
+  top: 1rem;
+}
+
+#unity-bubble .logo {
+  left: 0.6rem;
 }

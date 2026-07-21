@@ -16,6 +16,9 @@ const lerp = async function* (ms) {
     }
 }
 
+const mobileMediaQuery = window.matchMedia('(width < 40rem)');
+let pressTypeSpans = document.getElementsByClassName('press-type');
+
 // helepr functions to make saving/loading preferences from LocalStorage less painful
 function savePref(prefKey, prefValue) {
     window.localStorage.setItem(prefKey, JSON.stringify(prefValue));

@@ -372,6 +372,9 @@ th, tr {
   .rd-target {
     flex-direction: column !important;
   }
+  .bubble-caption {
+    font-size: 7px !important;
+  }
 }
 
 /*
@@ -427,16 +430,16 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 .bubble-caption {
   font-size: 12px;
   font-weight: bold;
-  font-family: 'Comic Sans MS';
+  font-family: 'ComicSans';
   width: 4rem;
   position: absolute;
-  top: 4rem;
+  top: 3.8rem;
   left: 0.22rem;
   text-align: center;
 }
 
 .logo-bubble {
-  scale: 110%;
+  scale: 120%;
   left: 2rem;
   top: -4rem;
   position: absolute;

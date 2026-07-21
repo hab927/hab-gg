@@ -42,11 +42,16 @@ const anim2Obj = {
 }
 
 function runAnimations() {
+    
+    if (mobileMediaQuery.matches) {         // mobile
+        skillsWidth = 5;
+    }
 
     let anim1Keyframes = [
         { transform: `translateX(-${skillsWidth}rem)` }, 
         { transform: `translateX(${skillsWidth}rem)` },
     ];
+
 
     for (let i = 0; i < logos.length; i++) {
         const logoDiv = document.querySelector('#' + logos[i] + '-bubble');
@@ -76,3 +81,5 @@ function stopAnimations() {
         });
     }
 }
+
+runAnimations();

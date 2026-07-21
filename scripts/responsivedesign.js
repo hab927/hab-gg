@@ -1,7 +1,3 @@
-const mobileMediaQuery = window.matchMedia('(width < 40rem)');
-
-let pressTypeSpans = document.getElementsByClassName('press-type');
-
 mobileMediaQuery.addEventListener('change', (e) => {
     if (!e.matches) {   // desktop
         mobileMenu.style.display = "none";

@@ -129,6 +129,7 @@ async function loadLogos() {
         //caption
         const caption = document.createElement('div');
         caption.textContent = captions[i];
+        caption.style.fontSize = '9px';
         caption.classList.add('bubble-caption');
 
         tdw.appendChild(img);

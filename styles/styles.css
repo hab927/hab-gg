@@ -167,13 +167,13 @@ th, tr {
 
   position: fixed;
   background-image: url("../assets/windows_vista_beta_75.jpg");
-  background-color: #272ccc99;
+  background-color: #06072299;
   background-blend-mode: multiply;
 
   width: calc(100% - (var(--m) - var(--bw) + 6px) * 2);
   height: calc(100% - (var(--m) - var(--bw) + 6px) * 2);
 
-  --blur: 2px;
+  --blur: 1px;
 
   -webkit-filter: blur(var(--blur));
   -moz-filter: blur(var(--blur));
@@ -181,7 +181,7 @@ th, tr {
   -ms-filter: blur(var(--blur));
   filter: blur(var(--blur));
 
-  border: 4px dashed black;
+  border: 4px solid salmon;
   z-index: 1;
 }
 
@@ -288,12 +288,15 @@ th, tr {
 }
 
 .blinkies-long > a > img {
+  max-width: 100%;
   width: 8rem;
+  margin: 0;
 }
 
 .blinkies-row > a > img {
   width: 4rem;
   max-width: 100%;
+  min-width: 90%;
   padding: 0px;
   margin: 0px;
 }
@@ -335,6 +338,15 @@ th, tr {
   background-size: 100% 100%;
   background-attachment: fixed;
   color: white;
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mobile-menu-image {
+  width: 70%;
 }
 
 .tooltip {
@@ -397,6 +409,10 @@ th, tr {
   .rd-target {
     flex-direction: column !important;
   }
+  .grid-display {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*
@@ -423,6 +439,11 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 
 .marquee p {
   display: inline-block;
+}
+
+.sidebar-image {
+  width: 100%;
+  box-shadow: #51414F;
 }
 
 @keyframes marquee {

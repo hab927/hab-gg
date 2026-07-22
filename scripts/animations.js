@@ -1,6 +1,6 @@
 let skillsWidth = 12;   // in rem
-const skillsHeight = 6; // rem too
-const duration = 30; // in seconds
+let skillsHeight = 2.5; // rem too
+const duration = 40; // in seconds
 
 const anim1Obj = {
     duration: duration * 1000,
@@ -8,31 +8,6 @@ const anim1Obj = {
     easing: 'ease-in-out',
     direction: 'alternate'
 };
-
-const anim2Keyframes = [
-    { 
-        transform: `translateY(${skillsHeight * 0.5}rem)`, 
-        opacity: '0.2',
-        scale: '60%',
-        zIndex: '0',
-        offset: 0
-    },
-    { 
-        opacity: '0.25',
-        zIndex: '0', 
-        offset: 0.49 
-    },
-    { 
-        opacity: '0.25',
-        zIndex: '3', 
-        offset: 0.5 
-    },
-    { 
-        transform: `translateY(${skillsHeight}rem)`,
-        scale: '90%',
-        zIndex: '3',
-    }
-];
 
 const anim2Obj = {
     duration: duration * 1000,
@@ -42,16 +17,43 @@ const anim2Obj = {
 }
 
 function runAnimations() {
-    
-    if (mobileMediaQuery.matches) {         // mobile
-        skillsWidth = 5;
-    }
+
+    const w = window.innerWidth;
+    const rfs = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const wRem = w / rfs;
+
+    skillsWidth = wRem / 3.5;
+    skillsHeight = wRem / 16;
 
     let anim1Keyframes = [
         { transform: `translateX(-${skillsWidth}rem)` }, 
         { transform: `translateX(${skillsWidth}rem)` },
     ];
 
+    let anim2Keyframes = [
+        { 
+            transform: `translateY(-${skillsHeight * 1.3}rem)`, 
+            opacity: '0.2',
+            scale: '60%',
+            zIndex: '0',
+            offset: 0
+        },
+        { 
+            opacity: '0.25',
+            zIndex: '0', 
+            offset: 0.49 
+        },
+        { 
+            opacity: '0.25',
+            zIndex: '3', 
+            offset: 0.5 
+        },
+        { 
+            transform: `translateY(${skillsHeight * 1.1}rem)`,
+            scale: '90%',
+            zIndex: '3',
+        }
+    ];
 
     for (let i = 0; i < logos.length; i++) {
         const logoDiv = document.querySelector('#' + logos[i] + '-bubble');

@@ -17,6 +17,7 @@ const lerp = async function* (ms) {
 }
 
 const mobileMediaQuery = window.matchMedia('(width < 40rem)');
+const bigScreenQuery = window.matchMedia('(width < 80rem)')
 let pressTypeSpans = document.getElementsByClassName('press-type');
 
 // helepr functions to make saving/loading preferences from LocalStorage less painful

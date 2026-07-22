@@ -372,9 +372,6 @@ th, tr {
   .rd-target {
     flex-direction: column !important;
   }
-  .bubble-caption {
-    font-size: 7px !important;
-  }
 }
 
 /*
@@ -417,75 +414,61 @@ Retrieved 2026-05-19, License - CC BY-SA 4.0
 /* spinning logos in the skills section */
 
 #spinning-logos {
-  perspective: 1000px;
-  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 4rem;
+  margin-top: 6%;
+  margin-bottom: 15%;
 }
 
 .bubble {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .bubble-caption {
-  font-size: 12px;
-  font-weight: bold;
   font-family: 'ComicSans';
-  width: 4rem;
+  width: 12rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46.6%, 4vw);
   position: absolute;
-  top: 3.8rem;
-  left: 0.22rem;
   text-align: center;
 }
 
+.depth-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .logo-bubble {
-  scale: 120%;
-  left: 2rem;
-  top: -4rem;
-  position: absolute;
+  position: relative;
 }
 
 .logo-bubble .logo {
-  width: 2.25rem;
-  left: 0.75rem;
-  top: 0.7rem;
+  width: 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
 .logo-bubble .bubble {
-  width: 3.75rem;
+  width: 8vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
-#typescript-bubble .logo {
+#unity-bubble .logo{
+  transform: translate(-57%, -50%);
+}
+
+#typescript-bubble .logo, #fmod-bubble .logo {
   scale: 80%;
-}
-
-#webgl-bubble .logo {
-  top: 1.4rem;
-}
-
-#fmod-bubble .logo {
-  scale: 80%;
-}
-
-#hlsl-bubble .logo {
-  top: 0.9rem;
-}
-
-#cpp-bubble .logo {
-  scale:90%;
-  top: 0.6rem;
-}
-
-#blender-bubble .logo {
-  top: 0.8rem;
-}
-
-#web-dev-bubble .logo {
-  top: 1rem;
-}
-
-#unity-bubble .logo {
-  left: 0.6rem;
+  transform: translate(-62%, -62%);
 }

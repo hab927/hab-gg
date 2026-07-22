@@ -1,25 +1,19 @@
-mobileMediaQuery.addEventListener('change', (e) => {
-    if (!e.matches) {   // desktop
-        mobileMenu.style.display = "none";
-        for (let i = 0; i < pressTypeSpans.length; i++) {
-            pressTypeSpans[i].textContent = "CLICK";
-        }
-        skillsWidth = 12;
-        stopAnimations();
-        runAnimations();
+window.addEventListener('resize', (e) => {
+    const w = window.innerWidth;
+    const rfs = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const wRem = w / rfs;
+
+    skillsWidth = wRem / 3.5;
+    skillsHeight = wRem / 16;
+    const fontSize = wRem / 5;
+
+    for (let i = 0; i < logos.length; i++) {
+        const logoDiv = document.querySelector('#' + logos[i] + '-bubble');
+        const depthDiv = logoDiv.children[0]; //a wrapper for depth animation
+        let caption = depthDiv.children[2];
+        caption.style.fontSize = Math.max(fontSize, 6) + 'px';
     }
 
-    else {              // mobile
-        // uncomment if people like having the mobile menu stay open
-
-        // if (MMactive) {
-        //     mobileMenu.style.display = 'block';
-        // }
-        for (let i = 0; i < pressTypeSpans.length; i++) {
-            pressTypeSpans[i].textContent = "TAP";
-        }
-        skillsWidth = 5;
-        stopAnimations();
-        runAnimations();
-    }
+    stopAnimations();
+    runAnimations();
 });

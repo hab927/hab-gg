@@ -273,6 +273,31 @@ th, tr {
 
 /* classes */
 
+.blinkies {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.blinkies-row {
+  display: flex;
+  margin-top: -0.25rem;
+}
+
+.blinkies-long > a > img {
+  width: 8rem;
+}
+
+.blinkies-row > a > img {
+  width: 4rem;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 .center-image {
     padding: 2em;
     display: block;

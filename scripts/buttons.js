@@ -21,8 +21,8 @@ emailButton.addEventListener('click', function() {
     navigator.clipboard.writeText(decryption);
 
     // tooltip appearance & disappearance
-    tooltip.style.visibility = 'visible';
     setTimeout(() => { tooltip.style.visibility = 'hidden' }, 3000);
+    tooltip.style.visibility = 'visible';
 });
 
 defaultFontButton.addEventListener('click', function() {

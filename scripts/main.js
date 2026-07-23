@@ -17,7 +17,9 @@ const lerp = async function* (ms) {
 }
 
 const mobileMediaQuery = window.matchMedia('(width < 40rem)');
-const bigScreenQuery = window.matchMedia('(width < 80rem)')
+const bigScreenQuery = window.matchMedia('(width < 80rem)');
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 let pressTypeSpans = document.getElementsByClassName('press-type');
 
 // helepr functions to make saving/loading preferences from LocalStorage less painful
@@ -48,7 +50,12 @@ function loadPrefs() {
     // wallpaper
     let wallpaperPref = loadPref('wallpaper');
     if (wallpaperPref == null) {
-        changeBG('light');
+        if (isDarkMode) {
+            changeBG('dark');
+        }
+        else {
+            changeBG('light');
+        }
     }
     else {
         changeBG(wallpaperPref);

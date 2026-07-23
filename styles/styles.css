@@ -83,6 +83,8 @@ details.blender {
   border:2px solid turquoise;
   color:white;
   background-image: url("../assets/dell_40.jpg");
+  background-color: #0009;
+  background-blend-mode: multiply;
   background-size: 120%;
 }
 details.blender a {

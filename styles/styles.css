@@ -40,6 +40,7 @@ body {
   overflow-x: hidden;
   scrollbar-color: red orange;
   scrollbar-width: thin;
+  background-color: black;
 }
 
 /* https://stackoverflow.com/questions/25444657/how-to-achieve-this-bevel-button-in-css */

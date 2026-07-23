@@ -196,22 +196,22 @@ th, tr {
   content: "";
 
   position: fixed;
-  background-image: url("../assets/windows_vista_beta_75.jpg");
+  background-image: url("../assets/background-stars.webp");
   background-color: #06072299;
   background-blend-mode: multiply;
 
   width: calc(100% - (var(--m) - var(--bw) + 6px) * 2);
   height: calc(100% - (var(--m) - var(--bw) + 6px) * 2);
 
-  --blur: 1px;
+  /* --blur: 1px;
 
   -webkit-filter: blur(var(--blur));
   -moz-filter: blur(var(--blur));
   -o-filter: blur(var(--blur));
   -ms-filter: blur(var(--blur));
-  filter: blur(var(--blur));
+  filter: blur(var(--blur)); */
 
-  border: 4px solid salmon;
+  border: 2px solid blue;
   z-index: 1;
 }
 
@@ -268,7 +268,8 @@ th, tr {
 }
 
 #sidebar-container {
-  background-image: url("../assets/dell_10.jpg");
+  background-image: url("../assets/background-stars.webp");
+  background-attachment: fixed;
   background-position-x: center;
   flex: 100% 100% 0;
   width: 14%;
